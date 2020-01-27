@@ -1,0 +1,165 @@
+buildscript {
+
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        // These docs use an open ended version so that our plugin
+        // can be updated quickly in response to Android tooling updates
+        // We recommend changing it to the latest version from our changelog:
+        // https://docs.fabric.io/android/changelog.html#fabric-gradle-plugin
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        applicationId "com.app.admin.sellah"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 15
+        versionName "0.2.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        ndk { abiFilters "armeabi", "armeabi-v7a", "x86", "mips" }
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            //  minifyEnabled enableProguardInReleaseBuilds
+            //   minifyEnabled true
+            /*proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'*/
+            //proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            aaptOptions.cruncherEnabled = false
+            aaptOptions.useNewCruncher = false
+            //   minifyEnabled true
+            //   shrinkResources true
+            //   proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        //encoding "UTF-8"
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+/*lintOptions {
+        abortOnError false        // true by default
+        checkAllWarnings false
+        checkReleaseBuilds false
+        ignoreWarnings true       // false by default
+        quiet true                // false by default
+    }*/
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries true
+        dexInProcess = true
+    }
+}
+
+dependencies {
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.hbb20:ccp:2.2.3'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+
+    implementation 'com.vincent.filepicker:MultiTypeFilePicker:1.0.7'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'nl.psdcompany:duo-navigation-drawer:2.0.8'
+    implementation 'com.afollestad.material-dialogs:core:0.9.5.0'
+    implementation 'com.github.sharish:CreditCardView:v1.0.4'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.google.code.gson:gson:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    //realm database gradle
+    //OTP Pin View
+    implementation 'com.github.GoodieBag:Pinview:v1.3'
+    //Glide library
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.4.0'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.9@aar') {
+        transitive = true;
+    }
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation('io.socket:socket.io-client:1.0.0') {
+        //excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+  //implementation 'com.github.nkzawa:socket.io-client:0.3.0'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.0.0'
+
+    implementation 'com.github.orangegangsters:swipy:1.2.3@aar'
+
+    //qr code scan
+   /*compile 'com.google.zxing:core:3.2.0'
+     compile 'com.google.zxing:android-integration:3.2.0'
+     compile 'com.google.zxing:android-core:3.2.0'*/
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+
+    implementation ('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
+        transitive = true;
+    }
+
+    //------------roomdatabase------------
+    implementation 'android.arch.persistence.room:runtime:1.0.0'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.0.0'
+
+    //implementation 'com.google.android.gms:play-services:11.6.0'
+    /*debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.2'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.2'*/
+    //stripe
+    implementation 'com.stripe:stripe-android:6.1.2'
+    //compile 'com.google.android.gms:play-services-location:10.2.1'
+    implementation 'com.stripe:stripe-android:4.1.0'
+    //compile 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.stripe:stripe-java:4.1.0'
+    implementation 'com.github.crosswall:Android-Coverflow:release-v1.0.5'
+    api project(":webrtc-android-framework")
+}
+apply plugin: 'com.google.gms.google-services'
+
+crashlytics {
+    enableNdk true
+    androidNdkOut 'src/main/obj'
+    androidNdkLibsOut 'src/main/libs'
+}

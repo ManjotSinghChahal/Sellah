@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/Womens"
+            android:title="Women\'s Fashion" />
+    </group>
+    /********************************************************/
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/Mens"
+            android:title="Men\'s Fashion" />
+    </group>
+
+
+    /********************************************************/
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/electronic"
+            android:title="Electronic Devices" />
+    </group>
+    /********************************************************/
+
+
+    <group
+    android:checkableBehavior="single">
+        <item
+            android:id="@+id/health"
+            android:title="Health &amp; beauty"/>
+    </group>
+
+    /********************************************************/
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/kids"
+            android:title="Kids"/>
+    </group>
+
+    /********************************************************/
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeGarden"
+            android:title="Home &amp; Garden" />
+    </group>
+
+    /********************************************************/
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/cars"
+            android:title="Cars" />
+    </group>
+
+
+    /********************************************************/
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/property"
+            android:title="Property" />
+    </group>
+
+    /********************************************************/
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/everything"
+            android:title="Everything Else" />
+    </group>
+
+    /********************************************************/
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/dash"
+            android:title="-------" />
+    </group>
+
+    /********************************************************/
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/support"
+            android:title="Support" />
+    </group>
+
+    /********************************************************/
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/legal"
+            android:title="Legal" />
+    </group>
+
+    /********************************************************/
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout"
+            android:title="Logout" />
+    </group>
+</menu>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="right"
+    android:gravity="right"
+    android:paddingBottom="@dimen/_5sdp"
+    android:paddingRight="@dimen/_3sdp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_gravity="right"
+    android:gravity="right"
+    android:paddingBottom="@dimen/_5sdp"
+    android:paddingRight="@dimen/_3sdp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:text="20:40"
+        android:minWidth="@dimen/_30sdp"
+        android:maxWidth="@dimen/_30sdp"
+        android:id="@+id/txt_msg_time"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_2sdp"
+        android:textSize="@dimen/_10sdp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <!--<ImageView
+            android:id="@+id/img_pin"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="top"
+            android:padding="@dimen/_2sdp"
+            android:visibility="visible"
+            android:src="@drawable/unpined_icon"
+            android:background="@drawable/pined_msg_bg"
+            />-->
+
+    <LinearLayout
+        android:background="@drawable/sendchat2"
+        android:id="@+id/ll_sendmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:padding="@dimen/_8sdp"
+            android:background="@color/colorTrans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:text="Sure Jane! No Problem"
+                android:maxWidth="@dimen/_215sdp"
+                android:textSize="@dimen/_12sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:id="@+id/img_user"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_3sdp"/>
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_toLeftOf="@+id/sender_tick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGrey"
+            android:text="Read"
+            android:visibility="gone"
+            android:textSize="@dimen/_8sdp"/>
+        <ImageView
+            android:src="@drawable/grey_tick"
+            android:id="@+id/sender_tick"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_10sdp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

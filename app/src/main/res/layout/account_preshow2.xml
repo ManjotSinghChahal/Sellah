@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43000000"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rel_powStripe"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/txt_add_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Powered by Stripe"
+            android:textSize="@dimen/_13sdp" />
+
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_below="@id/rel_powStripe"
+        android:layout_marginLeft="@dimen/_26sdp"
+        android:id="@+id/img_tiltDialog2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:rotation="15"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:src="@drawable/tilt_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_powStripe"
+        android:layout_toRightOf="@+id/img_tiltDialog2"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Sellah! Wallet Powered By Stripe."
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="Stripe is one of the best services on the internet. Powering the numerous companies like Grab, Booking.com, Under Armour,etc."
+            android:textColor="@color/colorWhite" />
+
+
+        <Button
+            android:id="@+id/gotit_btn_dialog2"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/i"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/round_red_border_testimonial"
+            android:text="Got it!"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

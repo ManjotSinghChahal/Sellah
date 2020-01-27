@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eceff1"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/wish_product_image"
+            android:layout_width="140dp"
+            android:padding="12dp"
+            android:layout_height="160dp"
+            android:src="@drawable/ic_launcher_background" />
+
+    </RelativeLayout>
+    <TextView
+
+
+        android:id="@+id/tb_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:text="item name"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/wish_product_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_item_name"
+        android:layout_marginTop="5dp"
+        android:text="S$ 168"
+        android:textSize="15dp" />
+</LinearLayout>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/wish_product_image"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:padding="12dp"
+        android:src="@drawable/product_icon" />
+
+    <TextView
+        android:id="@+id/wish_product_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_item_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:text="$60"
+        android:textSize="15dp" />
+
+
+    &lt;!&ndash;<TextView&ndash;&gt;
+    &lt;!&ndash;android:id="@+id/wish_product_name"&ndash;&gt;
+    &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+    &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+    &lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;
+    &lt;!&ndash;android:textColor="#000"&ndash;&gt;
+    &lt;!&ndash;android:text="item name"&ndash;&gt;
+    &lt;!&ndash;android:textSize="15dp" />&ndash;&gt;
+
+</LinearLayout>-->

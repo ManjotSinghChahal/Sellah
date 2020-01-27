@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "62674561734",
+    "firebase_url": "https://sellah-bcada.firebaseio.com",
+    "project_id": "sellah-bcada",
+    "storage_bucket": "sellah-bcada.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62674561734:android:d26b9011dc62505a",
+        "android_client_info": {
+          "package_name": "com.app.admin.sellah"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62674561734-cv8ccsb6ak5mtpl8k0agsn424i0ql7a9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.admin.sellah",
+            "certificate_hash": "cc8451cc83495b2456e7f038e48be3dc1d7f2cef"
+          }
+        },
+        {
+          "client_id": "62674561734-eo281g1gdj9s32abedh6im9bjag9bhij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1KjwZSAX9tsUihlSa6prB0_maYJi1PN4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62674561734-eo281g1gdj9s32abedh6im9bjag9bhij.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

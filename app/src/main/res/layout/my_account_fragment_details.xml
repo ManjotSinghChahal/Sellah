@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/li_myAccountRoot"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:elevation="@dimen/_7sdp"
+        android:background="@drawable/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+          <ImageView
+              android:src="@drawable/ic_chevron_left_black"
+              android:id="@+id/edtprofile_back"
+              android:layout_width="@dimen/_40sdp"
+              android:layout_height="@dimen/_40sdp" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="Edit Profile"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp" />
+
+        <android.support.design.widget.TabLayout
+            android:layout_below="@+id/edtprofile_back"
+            android:id="@+id/account_tabLayout"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:elevation="@dimen/_7sdp"
+            android:layout_width="match_parent"
+            app:tabMode="scrollable"
+            android:layout_height="@dimen/_28sdp"
+            app:tabSelectedTextColor="@color/colorBlack"
+            app:tabIndicatorHeight="2dp"
+            app:tabTextColor="@color/colorGrey"  />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_displatpicture"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:textColor="@color/light_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_22sdp"
+        android:text="Display Picture"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12sdp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_displaypicture"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:background="@drawable/edit_profile_dash_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:id="@+id/img_user_profile"
+            android:src="@drawable/sellah_icon" />
+
+        <TextView
+            android:background="@drawable/edit_profile_red_background"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_toRightOf="@+id/img_user_profile"
+            android:id="@+id/txt_change_profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="Change Picture"
+            android:textAllCaps="true"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_10sdp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/account_viewPager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/profile_TabLayout"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>

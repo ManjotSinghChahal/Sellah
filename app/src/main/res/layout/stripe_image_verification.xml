@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:elevation="@dimen/_7sdp"
+        android:id="@+id/addnewvideo_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/colorBlack"
+            android:text="Stripe"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+
+        android:layout_below="@+id/addnewvideo_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp"
+        tools:context=".NewProduct">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/colorBlack"
+            android:text="Upload Your Identification Document"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/colorGrey"
+            android:text="Please upload a photo of your IC (front) OR birth certificate OR driving license (front) OR any other government issued photo ID."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/colorGrey"
+            android:text="Upload ID"/>
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:layout_marginRight="@dimen/_18sdp"
+            android:id="@+id/li_take_picture"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/live_product_detail_dash_background"
+            >
+
+
+            <ImageView
+                android:visibility="gone"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/live_imgview"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:id="@+id/live_imgview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ggf"
+                android:layout_toRightOf="@+id/live_imgview"
+                android:gravity="center_vertical"
+                android:textColor="#9e9e9e"
+                android:textSize="@dimen/_12sdp"
+                />
+
+
+            <TextView
+                android:id="@+id/dummylive1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:layout_toLeftOf="@+id/dummylive2_text"
+                android:gravity="center_vertical"
+                android:textColor="#9e9e9e"
+                android:textSize="@dimen/_35sdp"
+                />
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/dummylive2_text"
+                android:paddingTop="@dimen/_3sdp"
+                android:gravity="center_vertical"
+                android:textColor="#9e9e9e"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Browse Photo"
+                android:textSize="@dimen/_12sdp"
+                />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/editimage_btn_live"
+                android:textAllCaps="false"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="#bdbdbd"
+                android:text="Edit Image"
+                android:background="#eeeeee"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/addmore_photos_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/live_product_detail_red_background"
+            android:text="Add more photos"
+            android:textSize="@dimen/_14sdp"
+            android:layout_gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:gravity="center"
+            android:textColor="@color/colorRed"
+            android:textAllCaps="false"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:padding="@dimen/_15sdp"
+        android:layout_above="@+id/bottom_li"
+        android:id="@+id/txt_mediakit_dec"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/register_stripe"
+        />
+
+    <LinearLayout
+        android:id="@+id/bottom_li"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_7sdp"
+        android:padding="@dimen/_20sdp"
+        android:background="@drawable/shadow_bg">
+
+        <Button
+            android:id="@+id/stripeimage_addbtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:text="Add"
+            android:enabled="false"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_red_border_testimonial_unselected"
+
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

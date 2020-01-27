@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/promote_update_promote"
+        android:title="Top-up promotion"/>
+    <item
+        android:id="@+id/promote_cancel_promote"
+        android:title="Cancel promotion"/>
+
+</menu>

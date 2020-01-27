@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/_3sdp"
+    android:paddingRight="@dimen/_3sdp"
+    android:id="@+id/root_checkout"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:id="@+id/top_rel_checkout"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_product"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:src="@drawable/glide_error"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/img_product"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/txt_product_name"
+                        android:layout_width="@dimen/_130sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Birthday Cakes"
+                        android:textColor="#000"
+                        android:minLines="2"
+                        android:textSize="@dimen/_12sdp" />
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/img_btn_make_offer"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_make_offer"
+                        />
+                    <CheckBox
+                        android:visibility="gone"
+                        android:id="@+id/chk_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:buttonTint="@color/colorRed"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_product_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_birthday"
+                        android:text="S$28"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_40sdp"
+                        android:id="@+id/txt_product_qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_birthday"
+                        android:text="Qty: 1"
+                        android:textColor="#cbcbcb"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+</RelativeLayout>

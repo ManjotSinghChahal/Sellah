@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval" >
+
+    <!--   <gradient
+           android:angle="90"
+           android:centerColor="@color/colorTrans"
+           android:endColor="@color/colorBlack"
+           android:startColor="@color/colorBlack"
+           android:type="linear" />-->
+    <gradient
+        android:angle="90"
+        android:startColor="#e90f3e"
+        android:endColor="#e90f3e"
+        android:centerColor="#e90f3e"
+        android:centerX="85%"/>
+    <!--    <gradient
+            android:angle="90"
+            android:startColor="@color/colorBlack"
+            android:endColor="@color/colorTrans"
+            android:centerColor="@color/colorTrans"
+            android:centerX="25%"/>-->
+    <corners
+        android:radius="0dp"/>
+
+</shape>

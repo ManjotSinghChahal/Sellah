@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_report"
+        android:title="Report" />
+
+  <item
+        android:id="@+id/menu_block_user"
+        android:title="Block User" />
+
+    <item
+        android:id="@+id/menu_dispute"
+        android:title="Dispute" />
+
+
+</menu>

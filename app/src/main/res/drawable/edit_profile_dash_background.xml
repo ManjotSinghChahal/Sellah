@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/_3sdp">
+        <shape
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <gradient
+                android:startColor="#ffffff"
+                android:endColor="#ffffff" />
+
+            <corners
+                android:radius="@dimen/_3sdp" />
+<stroke android:dashWidth="12px" android:dashGap="10px" android:width="@dimen/_2sdp" android:color="#f5f5f5"></stroke>
+
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/subcat_stream_img">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:background="@drawable/background_live_chat"
+            android:layout_alignParentBottom="true"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:background="@drawable/background_live_chat_header"
+            android:layout_alignParentBottom="true"
+            />
+        <!--<RelativeLayout
+            android:id="@+id/relLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp">
+            <RelativeLayout
+                android:id="@+id/relLay_back_live"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/back_arrow"
+                    android:tint="@color/colorWhite"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Discover Video"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/relLayoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp">
+
+            <RelativeLayout
+                android:id="@+id/relLay_back_live"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_35sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/back_arrow"
+                    android:tint="@color/colorWhite" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txt_productname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_toLeftOf="@+id/relLay_more_live"
+                android:layout_toRightOf="@+id/relLay_back_live"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16sdp"
+                android:text="Pinned messages" />
+            <RelativeLayout
+                android:id="@+id/relLay_more_live"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentRight="true">
+                <ImageView
+                    android:visibility="gone"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/option_icon"
+                    android:tint="@color/colorWhite" />
+            </RelativeLayout>
+            <!--   <RelativeLayout
+                   android:layout_alignParentEnd="true"
+                   android:layout_below="@+id/card_top_view"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+
+                   android:layout_alignParentRight="true">-->
+
+            <!--</RelativeLayout>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Discover Video"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relLayoutHeader"
+            android:layout_above="@+id/rel_pinned_comment"/>
+    </RelativeLayout>
+</RelativeLayout>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.fragments.ChatDetailFragment">
+
+    <RelativeLayout
+        android:id="@+id/relLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp">
+
+        <RelativeLayout
+            android:id="@+id/relLay_back_live"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_35sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/back_arrow"
+               />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Pinned Messages"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible"
+            android:textColor="@color/colorBlack"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rec_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/card_bottom_view"
+        android:layout_below="@+id/txt_review"
+        android:background="@drawable/chat_background" />
+
+</LinearLayout>
+-->
+

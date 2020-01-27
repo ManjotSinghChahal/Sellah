@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    -->
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/button_round_corners">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/btn_Noti"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/noti_button_bg_normal_left"
+                    android:gravity="center"
+                    android:text="Notifications"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack"
+                    android:layout_alignParentLeft="true" />
+                <ImageView
+                    android:id="@+id/notification_img"
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_5sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:src="@drawable/red_dot_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_18sdp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/btn_mess"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:text="Messages"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:background="@drawable/noti_button_bg_selected_right"
+                    android:textAllCaps="false"/>
+                <ImageView
+                    android:id="@+id/message_img"
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_5sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:src="@drawable/red_dot_icon"
+                    tools:ignore="RtlCompat" />
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <!--<android.support.design.widget.TabLayout-->
+            <!--android:id="@+id/tabs1"-->
+            <!--app:tabIndicatorHeight="0dp"-->
+            <!--app:tabSelectedTextColor="@color/colorWhite"-->
+            <!--app:tabTextAppearance="@style/MyCustomTextAppearance"-->
+            <!--app:tabTextColor="@color/colorRed"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/_30sdp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginLeft="@dimen/_20sdp"-->
+            <!--android:layout_marginRight="@dimen/_20sdp"-->
+            <!--android:layout_marginTop="@dimen/_10sdp"-->
+            <!--android:background="@drawable/red_border"-->
+            <!--android:gravity="center" />-->
+
+
+    <com.app.admin.sellah.view.CustomViews.NonSwipeableViewPager
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:id="@+id/notification_viewpagger"
+        />
+<!--        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New messages"
+            android:textSize="14sp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/new_message_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scrollbars="vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messages"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/message_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scrollbars="vertical" />-->
+
+
+
+    </LinearLayout>
+<!--</ScrollView>-->
+
+
+
+
+

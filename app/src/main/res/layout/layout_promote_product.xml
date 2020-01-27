@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cd_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    android:orientation="vertical">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/sv_root"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@drawable/round_border_testemonialheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="@drawable/round_border_testemonialheader"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:elevation="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:text="Choose Your Promotion Plan"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_14sdp"
+                    />
+
+                <ImageView
+                    android:id="@+id/btn_promote_cancel"
+                    android:tint="#c0c0c0"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="9dp"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/cross_icon"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="Advantages of choosing a promotion plan:"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_13sdp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/img_tick_1"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:background="@drawable/categoray_round_bg"
+                    android:padding="@dimen/_3sdp"
+                    android:tint="@color/colorWhite"
+                    android:src="@drawable/red_tick_new" />
+
+                <TextView
+                    android:gravity="center|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_tick_1"
+                    android:text="Get your product featured on top of search result"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:background="@drawable/categoray_round_bg"
+                    android:padding="@dimen/_3sdp"
+                    android:tint="@color/colorWhite"
+                    android:src="@drawable/red_tick_new" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Your product will get sold faster"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:src="@drawable/red_tick_new" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="No ads"
+                    android:textColor="#000"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>-->
+            <!--<LinearLayout
+                android:layout_marginTop="@dimen/_35sdp"
+                android:padding="@dimen/_3sdp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:background="@drawable/round_edittext_border"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_offer1"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Monthly premium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="S$ 420.55 "
+                    android:textColor="#000"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_monthly"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_edittext_border"
+                android:text="Monthly premium              Rs. 49.00"
+                android:textAllCaps="false"
+                android:textColor="#acaaaa"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btn_yearly"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#5a9e12"
+                android:text="Yearly premium              Rs. 499.00"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+    -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:text="Choose a plan that suits your needs:"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:id="@+id/rv_offer_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                 />
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pb_root"
+                android:padding="@dimen/_3sdp"
+                android:background="@color/colorWhite"/>
+
+
+
+            <Button
+                android:id="@+id/promote_btn"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:text="Choose this plan"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:background="@drawable/live_btn_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/promote_laterbtn"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorRed"
+                android:text="Maybe Later "
+                android:background="@drawable/edit_profile_red_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/round_border_testemonialheader"
+    android:padding="@dimen/_12sdp">
+
+    <RelativeLayout
+        android:elevation="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Transact Safer with Sellah Wallet"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/lin_send_offer_dialog"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/sellah_icon_red"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:textSize="@dimen/_32sdp"
+                android:text="sellah!"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:text="Sellah! Wallet is a safer way to make and receive payments online. Sellah! does not store any of your personal/banking information."/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_imIn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/signIn"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/round_red_border_testimonial"
+            android:gravity="center"
+            android:text="I'm In!"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

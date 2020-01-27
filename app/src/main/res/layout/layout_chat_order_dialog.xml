@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_border_testemonialheader"
+   android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_weight="1.88"
+        android:src="@drawable/carlogo"
+        android:visibility="invisible" />-->
+
+
+        <RelativeLayout
+            android:background="@drawable/round_border_testemonialheader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:elevation="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:text="Products"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_chat_order_cancel"
+                android:tint="#c0c0c0"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_margin="9dp"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/cross_icon"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_3sdp"
+                android:id="@+id/rl_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:id="@+id/pb_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rec_product"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_240sdp"
+                    android:layout_marginTop="@dimen/_8sdp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rec_product"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_5sdp"
+                    android:visibility="gone"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:id="@+id/li_sendOffer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_5sdp">
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:background="@color/colorLGrey" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/txt_status_canceled"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:gravity="center"
+                            android:text="Cancelled"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold|italic"
+
+                            />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_3sdp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Subtotal : "
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:layout_weight="1"
+           android:gravity="right"
+            android:id="@+id/txt_subtotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="S$ 0"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/txt_send_offer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/round_red_border_testimonial"
+        android:gravity="center"
+        android:text="Send Offer"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="bold" />
+
+
+    <!-- <TextView
+         android:id="@+id/txt_time"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+         android:layout_weight="1.3"
+         android:gravity="center"
+         android:paddingBottom="@dimen/_8sdp"
+         android:text="20:40"
+         android:textSize="@dimen/_10sdp"
+         android:visibility="invisible" />-->
+</LinearLayout>

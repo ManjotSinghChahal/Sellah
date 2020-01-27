@@ -1,0 +1,306 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Sellah!</string>
+    <string name="error_message_email">Incorrect email</string>
+    <string name="App_Name">App Name</string>
+    <string name="login_email">Email</string>
+    <string name="login_pass">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Register</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="success_send_mail">Email sent!</string>
+    <string name="forgot">I forgot my password?</string>
+    <string name="password">Password?</string>
+    <string name="currently_live">Currently live</string>
+    <string name="top_category">Top Categories</string>
+    <string name="more_products">More Products</string>
+    <string name="see_featured_posts">See all featured posts</string>
+    <string name="recommended_text">Recommended For You </string>
+    <string name="by_signing_in"> By Signing in or Signing up you agree to ours</string>
+    <string name="already_have_account"> Already have account? Sign In</string>
+    <string name="dont_get_otp"> Don"'"t get the Code? Resend SMS</string>
+    <string name="dont_have_account"> Don"'"t have account? Register</string>
+    <string name="terms_cond"> Terms and Conditions &amp; Privacy Policy</string>
+    <string name="text_sign_up">Sign up</string>
+    <string name="code">code</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signup_password">Password</string>
+    <string name="email">Email</string>
+    <string name="forget_pass_email_titile">Your Registered Email</string>
+    <string name="forget_pass_titile">Forget Password ? Don"'"t Worry!</string>
+    <string name="verify_otp_titile">Verify your phone mobile</string>
+    <string name="verify_otp_line1">Enter the OTP code we"'"ve just sent to your phone number.</string>
+    <string name="forget_pass_line_1">Enter the email address you used when you joined and we"'"ll send you instructions to reset your password.</string>
+    <string name="forget_pass_line_2">For security reasons, we do NOT store your password.</string>
+    <string name="forget_pass_line_3">So rest assured that we will never send your password via email.</string>
+    <string name="tags">Tags</string>
+    <string name="makeOffer">S$</string>
+    <string name="entername">Enter Name</string>
+    <string name="report_reason">your reason</string>
+    <string name="city">City</string>
+    <string name="logo">Logo</string>
+    <string name="search_result">Search</string>
+    <string name="title_home">Home</string>
+    <string name="title_live">Live</string>
+    <string name="title_Sell">Sell</string>
+    <string name="title_Engagement">Engagement</string>
+    <string name="title_Profile">Profile</string>
+    <string name="profile">Profile</string>
+    <string name="notification">Engagement</string>
+    <string name="sell">Sell</string>
+    <string name="live">Live</string>
+    <string name="see_more">See more</string>
+    <string name="dialog_content_forgot">Please Enter your Registered Email Address</string>
+    <string name="dialog_content_makeOffer">Original Price </string>
+    <string name="dialog_content_sendOffer">Enter offering amount </string>
+    <string name="dialog_title_information">Information</string>
+    <string name="dialog_message_logout">Do you want to logout of Sellah App?</string>
+    <string name="dialog_message_login">"You are not currently signed In. Kindly sign in/sign up to proceed."</string>
+    <string name="dialog_message_del_account">Are you sure you want to delete your Sellah account? Once deleted, it cannot be recovered and all account information will be lost? </string>
+    <string name="dialog_message_remove_from_cart" tools:ignore="ExtraTranslation">Are you sure you want to remove this item from your wishlist?<permanently></permanently> </string>
+    <string name="dialog_message_remove_comment" tools:ignore="ExtraTranslation">Are you sure you want to remove this comment?<permanently></permanently> </string>
+    <string name="dialog_message_remove_card" tools:ignore="ExtraTranslation">Are you sure you want to remove this card?<permanently></permanently> </string>
+    <string name="dialog_message_striperequired" tools:ignore="ExtraTranslation">You need to connect your sellah! account with stripe connect before accepting payment via Credit/Debit card.<permanently></permanently> </string>
+    <string name="dialog_action_yes">Yes</string>
+    <string name="dialog_title_block_user">Are you sure you want to Block this user? Once blocked, you will not able to see any updates from this user?</string>
+    <string name="dialog_title_un_follow_user">Are you sure you want to un-follow this user? Once un-follow, you will not able to get any updates notification from this user?</string>
+    <string name="dialog_title_cancel_promotion">Are you sure you want to cancel your product promotion? Because No refunds will be awarded.</string>
+    <string name="dialog_title_you_block_user">You have blocked this user. You must have to unblock this user to view his/her profile or to chat with this user. </string>
+    <string name="dialog_title_user_block_you">You are blocked by this user. You can"'"t communicate with this user or view his/her profile . </string>
+    <string name="dialog_title_unblock_user">Are you sure you want to Un-Block this user?</string>
+    <string name="dialog_title_mark_as_sold">Are you sure you want to mark this product as sold?</string>
+    <string name="dialog_title_delete_product">Are you sure you want to delete this product?</string>
+    <!--<string name="dialog_title_info_testimonial">Are you sure you want to Un-Block this user?</string>-->
+    <string name="dialog_action_yes_DA">Yes, delete my account</string>
+    <string name="dialog_action_continue">Continue</string>
+    <string name="dialog_action_unfollow">Unfollow</string>
+    <string name="dialog_action_unblock">Un-block</string>
+    <string name="dialog_action_no">No</string>
+    <string name="dialog_action_no_DA">No, I want to keep my account</string>
+    <string name="dialog_action_cancel">cancel</string>
+    <string name="dialog_action_connect_stripe">Connect Stripe</string>
+    <string name="lbl_mobile_otp">+91 %1$s******%2$s</string>
+    <string name="lbl_timer">%1$dm %2$ds</string>
+    /**************************************************************************/
+    //Sort-filter array items
+
+    //About Us section
+    <string name="about_us">About Us</string>
+    <string name="about_us_description">Sellah is an online marketplace focused on bringing the power of real-time video to Consumer-to-Consumer (C2C) online shopping. We believe in democratizing eCommerce and providingclever technology to allow small sellers to grow fast.Using Sellah, sellers can demonstrate items in real-time and take questions from prospective buyers, creating trust (and more sales!).\n\n
+Based in Singapore, Sellahaims to serve all of Southeast Asia, a region home to 641 millionconsumers with an online shopping sector expected to reach US$200 billion in value by 2025. The average Southeast Asian spends 3.6 hours per day on their mobile devices so Sellah is designed to be mobile first - we enable users to buy and sell anything at any place and time. Today, over 175,000 people use Sellah’s community in Singapore to buy and sell products.\n\n
+Sellah will expand rapidly across the Southeast Asia region delivering products and services as unique as the people who sell them.
+</string>
+    <string name="saving_c2c">Saving Consumer-to-Consumer (C2C) online shopping</string>
+    <string name="saving_c2c_description">C2C online shopping faces major problems – namely lack of customer trust and product information. By introducing real-time video to C2C, Sellah is solving these challenges. When using Sellah, customers can talk to buyers in real-time, ask questions, enjoy product demonstrations and have discussions in a collective group – this creates trust in the product and the person selling it. After the transaction, customers can give feedback and rate sellers – providing reassurance for future buyers.</string>
+
+    <string name="about_name">What’s in a name?</string>
+    <string name="about_name_description">Sellah’s name comes from the word ‘Sell’ and the Singaporean English phrase ‘Lah’ which is usually placed at the end of sentences for emphasis or reassurance. This name was suggested by our sellers and pays tribute to our home, Singapore. Members of our community are lovingly known as ‘Sellahs’.</string>
+
+    <string name="media_kit">Media Kit</string>
+
+    <string name="media_kit_description">For press queries please contact us at admin@sellah.com.</string>
+
+    //************************************************************//
+    //****************************Legal Section********************************//
+    <string name="legal_body">When you sign-up or sign-in to Sellah you agree to accept our terms which are listed below. Following these terms help protect you and create an enjoyable shopping experience for all Sellahs.</string>
+
+    <string name="register_stripe">By registering your account, you agree to our Services Agreement and the Stripe Connected Account Agreement.</string>
+    <string name="title_action_reset">Reset</string>
+
+    <string name="label_card_number">XXXX XXXX XXXX XXXX</string>
+    <string name="label_expired_date">MM/YY</string>
+    <string name="label_card_holder">CARD HOLDER</string>
+    <string name="label_cvv_code">CVV CODE</string>
+
+    <string name="hint_card_number">16-DIGIT CARD NUMBER</string>
+    <string name="hint_expired_date">EXPIRED DATE</string>
+    <string name="hint_card_holder">CARD HOLDER</string>
+    <string name="hint_cvv_code">CVV CODE</string>
+
+    <string name="label_secure_submission">Secure Submission</string>
+    //************************************************************//
+    <string-array name="City">
+        <item>Singapore</item>
+    </string-array>
+
+    <string-array name="condition">
+        <item>Condition</item>
+        <item>New</item>
+        <item>Used</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Category</item>
+        <item>Women\'s Fashion</item>
+        <item>Men\'s Fashion</item>
+        <item>Electronics</item>
+        <item>Health &amp; Beauty</item>
+        <item>Kids</item>
+        <item>Home &amp; Garden</item>
+        <item>Cars</item>
+        <item>Property</item>
+        <item>Everything Else</item>
+    </string-array>
+
+    <string-array name="payment_accepted">
+        <item>Payment Type</item>
+        <item>Cash</item>
+        <item>Credit/Debit Card</item>
+        <!--<item>Bank Transfer</item>-->
+
+    </string-array>
+
+    <string-array name="feature">
+        <item>Select option</item>
+        <item>Yes</item>
+        <item>No</item>
+        <!--<item>Bank Transfer</item>-->
+
+    </string-array>
+
+    <string-array name="Nagotiable">
+        <item>Price Negotiable</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="filter_price">
+        <item>Price</item>
+    </string-array>
+    <string-array name="sign_up_city">
+        <item>Singapore</item>
+    </string-array>
+    <string-array name="delivery">
+        <item>Delivery</item>
+        <item>Free Postal Deliver</item>
+        <item>Collection Only</item>
+    </string-array>
+    /**************************************************************************************/
+
+    //Add_Product array
+
+    <string-array name="add_Product_Payment">
+        <item>Payment Accepted</item>
+
+        <item>Credit/Debit Card</item>
+        <item>Cash</item>
+        <item>Bank Transfer</item>
+        <item> DBS PayLah!</item>
+        <item> PayNow</item>
+    </string-array>
+
+    <string-array name="add_product_delivery">
+        <item>Select delivery mode</item>
+        <item>Meet-up</item>
+        <item>Mail Item To Customer</item>
+    </string-array>
+
+
+    <string-array name="add_places">
+        <item>Central</item>
+        <item>North</item>
+        <item>East</item>
+        <item>West</item>
+        <item>North-South</item>
+    </string-array>
+
+
+    <string-array name="currency">
+        <item>S$</item>
+
+    </string-array>
+
+    <string-array name="add_product_payment_method">
+        <!-- <item>Payment Method</item>-->
+        <!-- <item>Cash</item>-->
+        <item>Credit Card</item>
+        <!-- <item>Bank Transfer</item>
+        <item>DBS PayLah!</item>
+        <item>PayNow</item>-->
+    </string-array>
+
+    <string-array name="add_product_category">
+        <item>Select Category</item>
+        <item>Women\'s Fashion</item>
+        <item>Men\'s Fashion</item>
+        <item>Electronics</item>
+        <item>Health &amp; Beauty</item>
+        <item>Kids</item>
+        <item>Home &amp; Garden</item>
+        <item>Cars</item>
+        <item>Property</item>
+        <item>Everything Else</item>
+    </string-array>
+
+
+    <string-array name="add_product_sub_category">
+        <item>Subcategory</item>
+    </string-array>
+
+    <string-array name="add_product_city">
+        <item>City(Currency)</item>
+        <item>S$</item>
+    </string-array>
+
+    <string-array name="sell_internationally">
+        <!--<item>Sell Strategy</item>-->
+        <item>Sell Internationally</item>
+        <item>Sell Locally</item><!-- <item>Sell Internationally?</item>
+        <item>Yes</item>
+        <item>No</item>-->
+    </string-array>
+
+    <string-array name="add_product_price">
+        <item>Price</item>
+    </string-array>
+
+    <string-array name="routing_banks">
+        <item>Select your bank</item>
+        <item>POSB/DBS</item>
+        <item>UOB</item>
+        <item>OCBC</item>
+        <item>HSBC </item>
+        <item>Standard Chartered Bank (SCB)</item>
+        <item>CitiBank</item>
+        <item>Others </item>
+    </string-array>
+    <string-array name="add_product_fixed">
+        <item>Select Type</item>
+        <item>Fixed Price</item>
+        <item>Price Negotiable</item>
+
+    </string-array>
+
+
+    <string-array name="add_product_condition">
+        <item>Select Condition</item>
+        <item>Brand New</item>
+        <item>Used</item>
+    </string-array>
+    <string-array name="add_product_number">
+        <item>No. of clicks</item>
+        <item>No. of impressions</item>
+    </string-array>
+
+
+    <string-array name="add_product_quantity">
+        <item>Quantity</item>
+    </string-array>
+
+
+    <string-array name="add_product_promote">
+        <item> Promote Product</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnDisconnectText">Connected</string>
+    <string name="btnConnectText">Connect</string>
+    <string name="connect_to_stripe">Please connect your account to stripe payment gateway.</string>
+    <string name="title_activity_add_new_videos">AddNewVideos</string>
+    <!--<string name="connected_to_stripe"></string>-->
+
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_make_offer"
+        android:title="Send offer"/>
+    <item
+        android:id="@+id/menu_add_bookmark"
+        android:title="Add to Bookmark"/>
+    <item
+        android:id="@+id/menu_remove_bookmark"
+        android:title="Remove from Bookmark"/>
+    <item
+        android:id="@+id/menu_pin_comment"
+        android:title="Pin this comment"/>
+    <item
+        android:id="@+id/menu_cancel"
+        android:title="Cancel"/>
+
+</menu>

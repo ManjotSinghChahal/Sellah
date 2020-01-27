@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/addnewvideo_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:background="@color/colorWhite"
+        android:elevation="@dimen/_7sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Add New Product"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/addnewvide_back"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_chevron_left_black" />
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addnewvideo_toolbar"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp"
+        tools:context=".NewProduct">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Nice Media"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_22sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="You can add up to 5 (five) photos and  1 (one) short video of products you want to sell."
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_13sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Add photos"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_13sdp" />
+
+        <RelativeLayout
+
+            android:id="@+id/rl_addnewvideo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/live_product_detail_dash_background"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/dummylive1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/dummylive2_text"
+                android:gravity="center_vertical"
+                android:text="+"
+                android:textColor="#9e9e9e"
+                android:textSize="@dimen/_35sdp" />
+
+
+            <TextView
+                android:id="@+id/dummylive2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:text="Browse Photos"
+                android:textColor="#9e9e9e"
+                android:textSize="@dimen/_12sdp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:paddingLeft="@dimen/_4sdp"
+                android:visibility="gone">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addmore_photos_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/live_product_detail_red_background"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:text="Add more photos"
+            android:textAllCaps="false"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Add a product story"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_13sdp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_addnewvideo1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/live_product_detail_dash_background"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/thumbnail_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/_7sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/car_icon"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/deleteimg"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_7sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/delete_icon"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/dummylive2_text1"
+                android:gravity="center_vertical"
+                android:text="+"
+                android:textColor="#9e9e9e"
+                android:textSize="@dimen/_35sdp" />
+
+
+            <TextView
+
+                android:id="@+id/dummylive2_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:text="Capture short video "
+                android:textColor="#9e9e9e"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow_bg"
+        android:elevation="@dimen/_7sdp"
+        android:padding="@dimen/_20sdp">
+
+        <Button
+            android:id="@+id/addnewvideo_btn_nxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_red_border_testimonial"
+            android:gravity="center"
+            android:text="Next"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

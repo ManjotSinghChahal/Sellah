@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_promote"
+        android:title="Promote product"/>
+    <item
+        android:id="@+id/menu_update_promote"
+        android:title="Top-up promotion"/>
+    <item
+        android:id="@+id/menu_cancel_promote"
+        android:title="Cancel promotion"/>
+
+    <item
+        android:id="@+id/menu_as_sold"
+        android:title="Mark as sold"/>
+
+    <item
+        android:id="@+id/menu_edit_item"
+        android:title="Edit product"/>
+    <item
+        android:id="@+id/menu_delete_item"
+        android:title="Delete"/>
+<!--Promote/Mark as sold/Delete-->
+</menu>

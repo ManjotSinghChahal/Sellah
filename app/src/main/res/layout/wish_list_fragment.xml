@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/wishlist_root"
+        android:paddingBottom="@dimen/_8sdp">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/wishListRecycler"
+            android:layout_width="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginTop="5dp"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:text="You May Also Like"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp"
+            android:nestedScrollingEnabled="false"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_suggested_post"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_no_product"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_product"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_100sdp" />
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:gravity="bottom"
+                android:textColor="@color/colorGrey"
+                android:text="No wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp" />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_no_network"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:src="@drawable/no_internet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:gravity="bottom"
+                android:textColor="@color/colorGrey"
+                android:text="Oops! No network"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp" />
+
+            <Button
+                android:id="@+id/reload"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:text="Reload this Page"
+                android:background="@drawable/red_border_solid"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_38sdp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

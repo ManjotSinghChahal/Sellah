@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="fill_parent">
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+    <Button
+       android:layout_centerInParent="true"
+        android:id="@+id/play"
+        android:background="@drawable/play"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <Button
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/pause"
+        android:background="@drawable/pause"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+
+    <Button
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:id="@+id/delete"
+        android:background="@drawable/cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <Button
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/check"
+        android:background="@drawable/check"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+</RelativeLayout>

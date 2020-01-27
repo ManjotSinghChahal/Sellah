@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+
+    >
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:minWidth="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border_testemonialheader"        android:layout_centerInParent="true">
+
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:id="@+id/review_txt"
+                android:elevation="@dimen/_5sdp"
+                android:background="@drawable/round_border_testemonialheader"
+
+                android:layout_height="@dimen/_40sdp">
+
+                <TextView
+                    
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Review Your Transaction"
+                    android:textColor="@color/colorDarkGray"
+                    android:textSize="@dimen/_16sdp"
+                    />
+
+
+                <ImageView
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/testimonial_cancel"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/cross_icon"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:layout_below="@+id/review_txt"
+            android:id="@+id/rate_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="On a scale of 1 to 5, how would you rate your experience when shopping with iphone store SG?"
+            android:textColor="#999999"
+            android:textSize="@dimen/_12sdp" />
+
+        <RatingBar
+            android:id="@+id/rtB_rating"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rate_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:isIndicator="false"
+            android:rating="0"
+            android:theme="@style/RatingBar" />
+
+
+        <TextView
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:id="@+id/txt_testimonial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rtB_rating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Any testimonials or comments"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#999999" />
+
+        <EditText
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:id="@+id/edt_testimonials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_testimonial"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_text_border"
+            android:gravity="top"
+            android:hint="Write down here"
+            android:minLines="5"
+            android:maxLines="5"
+            android:padding="6dp"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:id="@+id/btn_submit_review"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/edt_testimonials"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/round_red_border_testimonial_unselected"
+            android:gravity="center"
+            android:text="Submit Review"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_report"
+        android:title="Report"/>
+
+    <item
+        android:id="@+id/menu_send_offer"
+        android:title="Send Purchase Offer"/>
+
+</menu>

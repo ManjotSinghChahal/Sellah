@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/swipe_container"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_spin_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.app.admin.sellah.view.CustomViews.TouchDetectableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/touch_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+<!--feature video no need now -->
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Featured"
+                        android:textSize="@dimen/_14sdp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_250sdp">
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/viewPager_live"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                />
+
+                            <LinearLayout
+                                android:id="@+id/SliderDots"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/viewPager_live"
+                                android:layout_marginBottom="@dimen/_70sdp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="horizontal" />
+
+                        </RelativeLayout>
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/colorWhite"
+                        android:visibility="gone"
+                        android:padding="@dimen/_5sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Video Categories"
+                            android:textSize="@dimen/_14sdp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        >
+
+                        <TextView
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:layout_centerVertical="true"
+                            android:text="All Live videos"
+                            android:textSize="@dimen/_14sdp" />
+                    </RelativeLayout>
+
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_other_videos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/ll_no_product"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/no_chats"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp" />
+
+                        <TextView
+                            android:textSize="@dimen/_12sdp"
+                            android:gravity="bottom"
+                            android:textColor="@color/colorGrey"
+                            android:text="No live videos at the moment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_25sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/ll_no_network"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/no_internet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:textSize="@dimen/_12sdp"
+                            android:gravity="bottom"
+                            android:textColor="@color/colorGrey"
+                            android:text="Oops! No network"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_25sdp" />
+
+                        <Button
+                            android:id="@+id/reload"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:textColor="@color/colorWhite"
+                            android:textAllCaps="false"
+                            android:text="Reload this Page"
+                            android:background="@drawable/red_border_solid"
+                            android:layout_width="@dimen/_150sdp"
+                            android:layout_height="@dimen/_38sdp" />
+
+
+                    </LinearLayout>
+
+
+
+                    <ProgressBar
+                        android:id="@+id/pb_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_no_more_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text=" No more items available"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.app.admin.sellah.view.CustomViews.TouchDetectableScrollView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

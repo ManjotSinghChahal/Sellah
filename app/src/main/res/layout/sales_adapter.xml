@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_2sdp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/third_image"
+                android:layout_width="@dimen/_135sdp"
+                android:layout_height="@dimen/_115sdp"
+                android:scaleType="centerCrop"
+         />
+
+            <ImageView
+                android:id="@+id/btn_option"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:layout_gravity="right"
+                android:src="@drawable/option_icon"
+                android:tint="@color/colorWhite"/>
+
+            <TextView
+
+                android:id="@+id/txt_out_ofstock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:visibility="gone"
+                android:text="Out of Stock"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorWhite"
+                android:padding="@dimen/_3sdp"
+                android:alpha="0.85"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/live_btn_bg"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/img_featured"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="left"
+                android:scaleType="centerCrop"
+                android:src="@drawable/featured_png"
+                />
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_1sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:textColor="@color/colorBlack"
+                android:id="@+id/txt_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Wolswage polo"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textSize="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/txt_cost_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_product_name"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:paddingRight="@dimen/_1sdp"
+                android:text="S$"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/_10sdp" />
+            <TextView
+                android:textColor="@color/colorRed"
+                android:layout_toRightOf="@+id/txt_cost_code"
+                android:id="@+id/txt_product_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_product_name"
+                android:layout_marginRight="@dimen/_1sdp"
+                android:paddingRight="@dimen/_1sdp"
+                tools:text="1,999.99"
+                android:textSize="@dimen/_10sdp"
+             />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/_3sdp"
+    android:background="@drawable/round_border"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="5dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/third_image"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carlogo" />
+            <ImageView
+                android:id="@+id/btn_option"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:src="@drawable/option_icon"
+                android:tint="@color/colorWhite"/>
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_product_name"
+                android:layout_width="@dimen/_85sdp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/_2sdp"
+                android:text="Wolswage polo"
+                android:textSize="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/txt_cost_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_product_cost"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:paddingRight="@dimen/_2sdp"
+                android:text="S$"
+                android:textSize="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/txt_product_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:paddingRight="@dimen/_2sdp"
+                tools:text="1,999.99"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>-->
+    <!--<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardUseCompatPadding="true"
+    android:background="@drawable/round_border"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_3sdp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_2sdp"
+        android:background="@drawable/round_border"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/_8sdp"
+            android:elevation="0dp"
+            app:cardPreventCornerOverlap="true"
+            >
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/third_image"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/carlogo" />
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_product_name"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Wolswage polo"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/txt_cost_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_product_cost"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:paddingRight="@dimen/_1sdp"
+                android:text="S$"
+                android:textSize="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/txt_product_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_1sdp"
+                android:paddingRight="@dimen/_1sdp"
+                tools:text="1,999.99"
+                android:textSize="@dimen/_10sdp"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>-->
+
+    <!--
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/round_border"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="5dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_3sdp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardPreventCornerOverlap="true">
+
+            <RelativeLayout
+                android:id="@+id/rly"
+                android:layout_width="wrap_content"
+                android:layout_height="135dp">
+
+                <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/carlogo" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/option_icon"
+                    android:tint="@color/colorWhite"/>
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/salesText"
+                android:textSize="@dimen/_13sdp"
+                android:text="Car" />
+            <TextView
+                android:id="@+id/salesCost"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/_13sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:text="1000$" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+&lt;!&ndash;
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rly"
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:padding="5dp">
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/carlogo" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/option_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rly"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/salesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:text="CAR" />
+
+            <TextView
+                android:id="@+id/salesCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:text="1000$" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>&ndash;&gt;
+-->

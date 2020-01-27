@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_8sdp"
+ >
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="0dp"
+        android:elevation="0dp"
+        card_view:cardPreventCornerOverlap="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rel_title"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lin_title"
+                android:padding="@dimen/_3sdp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_category"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:clickable="true"
+                    android:background="@drawable/round_red_border"
+                    />
+                <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:text="Test text"
+                    android:textColor="#000"
+                    />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_weight=".2"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_height="wrap_content"
+                android:id="@+id/outer"
+                android:layout_below="@+id/lin_title"
+                />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+        android:elevation="0dp"
+        card_view:cardPreventCornerOverlap="true"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/inner_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+        android:layout_centerHorizontal="true"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+             <ImageView
+                 android:id="@+id/img_innerview"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:clickable="true"
+                 android:scaleType="centerCrop"
+                 android:src="@drawable/ic_launcher_background"
+                 />
+            <TextView
+                android:id="@+id/innerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="Test Text"
+                android:textSize="18dp"
+                android:background="#74bf72e9"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/inner_card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        card_view:cardPreventCornerOverlap="true"
+        android:layout_below="@+id/inner_card_view"
+        android:layout_marginTop="5dp"
+        card_view:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+             <ImageView
+                 android:id="@+id/innerview1"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:clickable="true"
+                 android:background="@drawable/ic_launcher_background"
+                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="Test Text"
+                android:textSize="18dp"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <!--    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+            <!-- <ImageView
+                 android:id="@+id/innerview"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:clickable="true"
+                 android:background="@drawable/ic_launcher_background"
+                 />-->
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

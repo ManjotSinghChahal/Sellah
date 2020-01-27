@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:elevation="@dimen/_7sdp"
+        android:id="@+id/addnewvideo_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/colorBlack"
+            android:text="Wallet "/>
+
+
+        <ImageView
+            android:id="@+id/addnewinfo_back"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_chevron_left_black" />
+    </RelativeLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="@color/coloCreamyWhite">
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/addnewvideo_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".NewProduct">
+        <TextView
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17sdp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorBlack"
+            android:text="Create Your Sellah Wallet"/>
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_width="wrap_content"
+            android:textStyle="italic"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:text="Powered by Stripe"/>
+
+
+
+        <LinearLayout
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:id="@+id/rootTag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="First Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:id="@+id/str_edt_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:textColorHint="@color/light_grey"
+                        android:hint="Enter your first name"
+                        android:background="@drawable/live_product_detail_grey_background"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Last Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:id="@+id/str_edt_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:textColorHint="@color/light_grey"
+                        android:hint="Enter your last name"
+                        android:background="@drawable/live_product_detail_grey_background"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/str_doblayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Date of Birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:id="@+id/str_edt_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:textColorHint="@color/light_grey"
+                        android:hint="Enter your DOB"
+                        android:background="@drawable/live_product_detail_grey_background"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Personal Id Number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:id="@+id/str_edt_personalid"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:textColorHint="@color/light_grey"
+                        android:hint="Enter your personal id"
+                        android:background="@drawable/live_product_detail_grey_background"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:id="@+id/str_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:textColorHint="@color/light_grey"
+                        android:hint="Enter your Address"
+                        android:background="@drawable/live_product_detail_grey_background"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Postal Code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:id="@+id/str_edt_postal_coe"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|left"
+                    android:textColorHint="@color/light_grey"
+                    android:hint="Postal code"
+                    android:background="@drawable/live_product_detail_grey_background"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Account Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:id="@+id/str_edt_accountnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|left"
+                    android:textColorHint="@color/light_grey"
+                    android:hint="Account Number"
+                    android:background="@drawable/live_product_detail_grey_background"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Routing Number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <EditText
+                        android:visibility="gone"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:id="@+id/str_edt_routingnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center|left"
+                        android:textColorHint="@color/light_grey"
+                        android:hint="Routing code"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:background="@drawable/live_product_detail_grey_background"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/routing_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@drawable/live_product_detail_grey_background"
+                        android:textSize="@dimen/_13sdp">
+                        <ImageView
+                            android:id="@+id/routing_img"
+                            android:tint="#dcdcdc"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/down_arrow"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp" />
+
+                        <Spinner
+                            android:layout_centerVertical="true"
+                            android:id="@+id/spinner_routing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:drawSelectorOnTop="true"
+                            android:entries="@array/routing_banks" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_7sdp"
+            android:padding="@dimen/_20sdp"
+            android:background="@drawable/shadow_bg">
+            <Button
+                android:id="@+id/add_info_post"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/round_red_border_testimonial"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/surface_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/video_back"
+        android:background="@drawable/cancel"
+        android:layout_width="26dp"
+        android:layout_height="26dp" />
+
+
+
+
+    <ProgressBar
+        android:layout_alignParentBottom="true"
+        android:id="@+id/progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="107dp"
+        android:layout_gravity="center"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:max="48"
+        android:progress="48"
+        android:progressDrawable="@drawable/circular_back" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_instructions"
+        android:layout_above="@+id/rel_video">
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/rel_adv"
+       android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/red_border_solid"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:layout_centerInParent="true"
+            android:text="Press and hold to record"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_below="@+id/rel_adv"
+        android:id="@+id/img_corner"
+        android:layout_marginTop="-30dp"
+        android:layout_marginRight="120dp"
+       android:layout_alignParentRight="true"
+        android:background="@drawable/video_corner"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rel_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+        <Button
+            android:background="@drawable/recording_button_stroke"
+            android:id="@+id/video"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/anim_ciricleimage"
+            android:src="@drawable/rec"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <!-- <Button
+         android:id="@+id/buttonstart"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/ic_launcher_foreground" />-->
+</RelativeLayout>
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>-->

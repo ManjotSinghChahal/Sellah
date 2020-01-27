@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/_20sdp"
+    android:layout_marginRight="@dimen/_20sdp">
+
+    <ImageView
+        android:id="@+id/bankImg"
+        android:layout_width="@dimen/_31sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_below="@id/txt_card_detail"
+        android:src="@drawable/visa_card_icon" />
+
+    <TextView
+        android:id="@+id/txt_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_toRightOf="@id/bankImg"
+        android:gravity="left|center"
+        android:text="ending in"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/txt_card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_toLeftOf="@+id/edt_card_edit"
+        android:layout_toRightOf="@id/txt_card"
+        android:gravity="left|center"
+        android:text="8765"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/edt_card_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Remove"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/_12sdp" />
+
+
+</RelativeLayout>

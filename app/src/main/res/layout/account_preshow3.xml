@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43000000"
+    android:gravity="center">
+
+
+
+
+    <ImageView
+        android:layout_below="@id/rel_dialogBanner3"
+        android:id="@+id/img_tiltDialog3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:rotation="82"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_marginLeft="@dimen/_26sdp"
+        android:layout_marginTop="-30dp"
+        android:src="@drawable/tilt_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel_dialogBanner3"
+        android:gravity="center"
+
+        android:layout_toRightOf="@+id/img_tiltDialog3"
+        android:layout_marginLeft="@dimen/_26sdp"
+        android:layout_marginRight="@dimen/_26sdp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:text="Don't Worry!"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_gravity="center"
+            android:text="Sellah! does not store any of your sensitive data. The sensitive data are encrypted and sent to Stripe servers securely."
+            android:textColor="@color/colorWhite" />
+
+
+        <Button
+            android:id="@+id/gotit_btn_dialog3"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/i"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/round_red_border_testimonial"
+            android:text="Got it!"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_powStripe"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_tiltDialog3"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/txt_add_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Personal ID Number"
+            android:textSize="@dimen/_11sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_below="@+id/txt_add_photos"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/round_rect_black">
+            <TextView
+                android:id="@+id/txt_add_photoss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="Personal ID Number"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_11sdp" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

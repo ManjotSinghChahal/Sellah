@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="@dimen/_80sdp"
+    android:layout_height="wrap_content"
+     android:background="@android:color/transparent"
+    >
+
+    <ImageView
+        android:layout_marginTop="@dimen/_55sdp"
+        android:rotation="90"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/tilt_line"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:id="@+id/tut_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Transaction Fees "
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_gravity="center"
+            android:text="Cards and Processing fees: 3.4% + "
+            android:textColor="@color/colorWhite" />
+        <TextView
+
+            android:id="@+id/i2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/i"
+            android:layout_gravity="center"
+            android:text="S$ 0.50"
+            android:textColor="@color/colorWhite" />
+        <TextView
+            android:id="@+id/i3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/i2"
+            android:layout_gravity="center"
+            android:text="Admin fees: 1% + S$1"
+            android:textColor="@color/colorWhite" />
+
+
+        <Button
+            android:id="@+id/gotit_btn"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/i3"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/round_red_border_testimonial"
+            android:text="Got it!"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_3sdp"
+         android:layout_below="@+id/tut_rl1"
+        android:id="@+id/rel"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+
+
+        <TextView
+            android:id="@+id/tut_txt1"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_12sdp"
+            android:text="Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_below="@+id/tut_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:background="@drawable/live_product_detail_background"
+                    android:paddingLeft="@dimen/_7sdp"
+                    android:id="@+id/price_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_33sdp"
+                    android:drawSelectorOnTop="true"
+                    android:hint="$ 1,799"
+                    android:maxLength="20"
+                    android:gravity="center_vertical"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_33sdp"
+                        android:drawSelectorOnTop="true"
+                        android:id="@+id/price_rec_dialog"
+                        android:hint="You will recieve S$ 1718.35"
+                        android:gravity="center_vertical"
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorGrey"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <ImageView
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/faq"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_33sdp" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

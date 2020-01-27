@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_promote"
+        android:title="Promote product"/>
+    <item
+        android:id="@+id/menu_update_promote"
+        android:title="Update promotion"/>
+    <item
+        android:id="@+id/menu_cancel_promote"
+        android:title="Cancel promotion"/>
+    <item
+        android:id="@+id/menu_delete"
+        android:title="Delete listing" />
+    <item
+        android:id="@+id/menu_edit_product"
+        android:title="Edit product" />
+    <item
+        android:id="@+id/menu_mark_sold"
+        android:title="Mark As Sold" />
+
+    <item
+        android:id="@+id/wishlist"
+        android:title="Add to Wishlist" />
+
+    <item
+        android:id="@+id/menu_share"
+        android:title="Share" />
+    <item
+        android:id="@+id/menu_report"
+        android:title="Report" />
+</menu>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/coloCreamyWhite"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/_3sdp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGrey"
+        android:orientation="horizontal"
+        android:id="@+id/li_root_view"
+        android:padding="@dimen/_8sdp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#eceff1">
+
+            <ImageView
+                android:id="@+id/additional_image"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:scaleType="centerCrop"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp"
+            android:weightSum="3">
+
+            <TextView
+                android:gravity="top|left"
+                android:id="@+id/tb_item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="Item name"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tb_item_cost1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tb_item_name"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="#bababa"
+                android:text="$ 168"
+                android:gravity="bottom|left"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/tb_item_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tb_item_name"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="@color/colorRed"
+                android:text="$ 168"
+                android:gravity="bottom|left"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/recommend_posted"
+                android:textColor="#a3a3a4"
+                android:text="Posted in a day"
+                android:gravity="center|left|bottom"
+                android:layout_weight="1.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tb_item_name"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/_11sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

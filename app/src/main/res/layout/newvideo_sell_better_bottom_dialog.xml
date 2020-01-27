@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/round_border_testemonialheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/linn"
+            android:layout_width="match_parent"
+            android:elevation="@dimen/_5sdp"
+            android:background="@drawable/round_border_testemonialheader"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <TextView
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sell Better with Sellah"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_13sdp" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_below="@id/linn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+      />
+
+
+        <TextView
+            android:textColor="@color/grey_font"
+            android:id="@+id/text_better"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="This series will take you through on \n How to make your product sell better." />
+
+
+        <Button
+            android:id="@+id/excited_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/text_better"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/round_red_border_testimonial"
+            android:text="I'm Excited!"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/rel_root_noti"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:tint="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/live_icon" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_new_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="New Followers"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/li_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/alert_icon" />
+
+                <TextView
+                    android:id="@+id/txt_no_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="No result found"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/new_message_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/txt_announcements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="Announcements"
+                android:textSize="14sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/message_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:id="@+id/txt_post_activites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:text="Post Activity"
+                android:textSize="14sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/post_activity_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

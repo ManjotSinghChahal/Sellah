@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_margin="@dimen/_15sdp"
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="@dimen/_280sdp" />
+
+
+    <TextView
+        android:textSize="@dimen/_15sdp"
+        android:id="@+id/txt_sellah"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is Sellah?"/>
+
+
+
+    <TextView
+        android:layout_marginTop="@dimen/_7sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textSize="@dimen/_14sdp"
+        android:id="@+id/txt_sellah_main"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_sellah"
+        android:layout_width="wrap_content"
+        android:textColor="#393939"
+        android:layout_height="wrap_content"
+        android:text="Sellah! is the revolutionary vCommerce
+platform where e-commerce meets video!"/>
+
+</RelativeLayout>

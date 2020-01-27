@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--
+
+  <org.webrtc.SurfaceViewRenderer
+      android:id="@+id/camera_view_renderer"
+      android:layout_width="match_parent"
+      android:layout_below="@+id/relLayoutHeader"
+      android:layout_height="match_parent" />
+
+  <android.support.v7.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:layout_above="@+id/card_bottom_view"
+      android:id="@+id/recyclerview_livemodule_chat">
+
+  </android.support.v7.widget.RecyclerView>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_alignParentBottom="true"
+      android:alpha="0.8"
+      android:background="@color/colorBlack"
+      android:id="@+id/card_bottom_view">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_centerVertical="true">
+
+      <ImageView
+          android:id="@+id/img_send_camera"
+          android:layout_width="22dp"
+          android:layout_height="22dp"
+          android:layout_gravity="bottom"
+          android:layout_marginBottom="10dp"
+          android:src="@drawable/share_icon"
+          android:tint="#fff"
+          android:padding="6dp"
+          android:background="@drawable/round_gray_border"
+          />
+
+      <ImageView
+          android:id="@+id/img_send_gallery"
+          android:layout_width="22dp"
+          android:layout_height="22dp"
+          android:layout_gravity="bottom"
+          android:layout_marginLeft="8dp"
+          android:layout_marginBottom="10dp"
+          android:src="@drawable/gallery_icon" />
+
+      <EditText
+          android:id="@+id/edt_message"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:layout_marginLeft="8dp"
+          android:layout_weight="1.6"
+          android:imeOptions="actionDone"
+          android:layout_marginBottom="3dp"
+          android:background="@drawable/edittextb_back"
+          android:hint="Type a message here"
+          android:paddingLeft="16dp"
+          android:paddingTop="8dp"
+          android:paddingBottom="8dp"
+          android:paddingRight="8dp"
+          android:minHeight="40dp"
+          android:maxHeight="100dp"
+          android:layout_marginTop="2dp"
+          android:scrollbars="vertical"
+          android:inputType="textMultiLine"
+          android:textSize="12dp" />
+
+      <ImageView
+          android:id="@+id/btn_send_live"
+          android:layout_width="33dp"
+          android:layout_height="33dp"
+          android:layout_gravity="bottom"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_marginTop="6dp"
+          android:layout_marginBottom="6dp"
+          android:src="@drawable/send_btn_chat" />
+    </LinearLayout>
+  </RelativeLayout>
+
+-->
+
+
+    </RelativeLayout>

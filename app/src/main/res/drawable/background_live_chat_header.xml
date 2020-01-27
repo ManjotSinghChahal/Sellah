@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+
+    <!--   <gradient
+           android:angle="90"
+           android:centerColor="@color/colorTrans"
+           android:endColor="@color/colorBlack"
+           android:startColor="@color/colorBlack"
+           android:type="linear" />-->
+       <gradient
+           android:angle="90"
+           android:startColor="@color/colorTrans"
+           android:endColor="@color/colorBlackTransLittle"
+           android:centerColor="@color/colorTrans"
+           android:centerX="85%"/>
+<!--    <gradient
+        android:angle="90"
+        android:startColor="@color/colorBlack"
+        android:endColor="@color/colorTrans"
+        android:centerColor="@color/colorTrans"
+        android:centerX="25%"/>-->
+    <corners
+        android:radius="0dp"/>
+
+</shape>
+<!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/_50sdp">
+
+        <shape android:shape="rectangle">
+            <rotate
+                android:fromDegrees="90"
+                android:toDegrees="180"
+                >
+           <gradient
+                android:startColor="@color/colorTrans"
+                android:endColor="@color/colorBlack"
+                android:centerColor="@color/colorTrans"
+                android:centerX="55%"/>
+
+        </rotate>
+        </shape>
+    </item>
+    <item >
+        <rotate
+            android:fromDegrees="90"
+            android:toDegrees="180"
+            >
+        <shape android:shape="rectangle">
+           <gradient
+                android:startColor="@color/colorBlack"
+                android:endColor="@color/colorTrans"
+                android:centerColor="@color/colorTrans"
+                android:centerX="25%"/>
+        </shape>
+        </rotate>
+    </item>
+</layer-list>-->

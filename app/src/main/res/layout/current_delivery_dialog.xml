@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff"
+
+    tools:context=".view.activities.LoginActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ffffff"
+        android:padding="@dimen/_8sdp"
+        tools:context=".view.activities.LoginActivity">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/round_border"
+            android:orientation="vertical"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                tools:context=".view.activities.LoginActivity">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:id="@+id/rl_header"
+                    android:layout_marginBottom="@dimen/_3sdp">
+
+
+                    <TextView
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Please Enter your Address"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/_15sdp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:id="@+id/top_view"
+                    android:layout_below="@id/rl_header"
+                    android:background="@color/colorLGrey" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top_view">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Name *"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <com.app.admin.sellah.view.CustomViews.NoChangingBackgroundTextInputLayout
+                                android:id="@+id/il_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_10sdp">
+
+                                <EditText
+                                    android:id="@+id/edt_add_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:background="@drawable/edit_text_border"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:singleLine="true"
+                                    android:textColorHint="@color/colorLGrey"
+                                    android:textSize="@dimen/_12sdp" />
+                            </com.app.admin.sellah.view.CustomViews.NoChangingBackgroundTextInputLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/etSignup_email"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Address Line 1 *"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <com.app.admin.sellah.view.CustomViews.NoChangingBackgroundTextInputLayout
+                                android:id="@+id/il_add_1"
+                                android:layout_width="match_parent"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/edt_add_address1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:background="@drawable/edit_text_border"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:singleLine="true"
+                                    android:textColorHint="@color/colorLGrey"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </com.app.admin.sellah.view.CustomViews.NoChangingBackgroundTextInputLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Address Line 2"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <com.app.admin.sellah.view.CustomViews.NoChangingBackgroundTextInputLayout
+                                android:id="@+id/il_add_2"
+                                android:layout_width="match_parent"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/edt_add_address2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:background="@drawable/edit_text_border"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:singleLine="true"
+                                    android:textSize="@dimen/_12sdp" />
+                            </com.app.admin.sellah.view.CustomViews.NoChangingBackgroundTextInputLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Postal Code *"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <com.app.admin.sellah.view.CustomViews.NoChangingBackgroundTextInputLayout
+                                android:id="@+id/il_postal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:hintEnabled="false"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_10sdp">
+
+                                <EditText
+                                    android:id="@+id/postal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_30sdp"
+                                    android:background="@drawable/edit_text_border"
+                                    android:paddingLeft="@dimen/_5sdp"
+                                    android:singleLine="true"
+                                    android:textSize="@dimen/_12sdp" />
+                            </com.app.admin.sellah.view.CustomViews.NoChangingBackgroundTextInputLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="State"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@drawable/edit_text_border">
+
+                                <Spinner
+                                    android:id="@+id/spin_state"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/sign_up_city"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="City"
+                                android:textSize="@dimen/_13sdp" />
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:background="@drawable/edit_text_border">
+
+                                <Spinner
+                                    android:id="@+id/spin_city"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:entries="@array/sign_up_city"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </RelativeLayout>
+
+                            <Button
+                                android:id="@+id/submit"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_below="@id/signIn"
+                                android:layout_marginLeft="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:layout_marginRight="@dimen/_20sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:background="@drawable/round_red_border"
+                                android:gravity="center"
+                                android:text="Submit"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_13sdp" />
+
+                        </LinearLayout>
+                    </ScrollView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/back_img"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/_2sdp"
+        android:background="@drawable/round_red_border"
+        android:padding="@dimen/_6sdp"
+        android:rotation="45"
+        android:src="@drawable/add_plus_button" />
+</RelativeLayout>

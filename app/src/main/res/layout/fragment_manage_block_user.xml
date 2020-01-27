@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/coloCreamyWhite"
+    android:id="@+id/root_mbu"
+    tools:context=".view.fragments.ManageBlockUser">
+
+
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:id="@+id/rv_blocked_user"
+       android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/txt_no_blocked_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:textSize="@dimen/_12sdp"
+        android:text="Blocked users will no longer able to see you or send you messages."
+        />
+
+</FrameLayout>

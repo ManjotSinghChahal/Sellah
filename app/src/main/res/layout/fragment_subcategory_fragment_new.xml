@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/htab_maincontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/htab_appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:elevation="0dp">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/htab_collapse_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentScrim="@color/colorWhite"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:titleEnabled="false">
+
+                    <LinearLayout
+                        android:id="@+id/li_view_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_45sdp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/txt_cat_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:text="Category name"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_14sdp"
+                            android:visibility="visible" />
+                        <!-- <android.support.v7.widget.CardView
+                             android:id="@+id/cv_adds"
+                             android:layout_width="match_parent"
+                             android:layout_height="@dimen/_135sdp"
+                             android:layout_below="@id/relativeLayout"
+                             android:padding="@dimen/_10sdp"
+                             app:cardElevation="@dimen/_5sdp"
+                             app:cardUseCompatPadding="true"
+                             card_view:cardCornerRadius="15dp">-->
+
+                        <!-- <RelativeLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+
+                             <android.support.v4.view.ViewPager
+                                 android:id="@+id/viewPagerSubCat"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:background="@drawable/round_border" />
+
+                             <LinearLayout
+                                 android:id="@+id/SliderDots"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_alignBottom="@+id/viewPagerSubCat"
+                                 android:layout_marginBottom="@dimen/_10sdp"
+                                 android:gravity="center_vertical|center_horizontal"
+                                 android:orientation="horizontal" />
+
+                         </RelativeLayout>-->
+                        <RelativeLayout
+                            android:id="@+id/rel_adds"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_170sdp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:padding="@dimen/_5sdp">
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/viewPagerSubCat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true" />
+
+                            <LinearLayout
+                                android:id="@+id/SliderDots"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/viewPagerSubCat"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="horizontal" />
+
+                        </RelativeLayout>
+                        <!--</android.support.v7.widget.CardView>-->
+                        <TextView
+                            android:id="@+id/text_live_video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/currently_live"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            android:id="@+id/text_no_live_video"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="Currently no live video available."
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_5sdp">
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/vp_live"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_190sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:visibility="visible" />
+
+                            <LinearLayout
+                                android:id="@+id/vp_live_dots"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/vp_live"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:orientation="horizontal" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/htab_toolbar"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="top"
+                        android:layout_marginBottom="?attr/actionBarSize"
+                        app:layout_collapseMode="pin" />
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        app:cardBackgroundColor="@color/colorWhite"
+                        app:cardCornerRadius="@dimen/_2sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rec_sub_cat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </android.support.v7.widget.CardView>
+
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <com.app.admin.sellah.view.CustomViews.TouchDetectableScrollView
+                android:id="@+id/scroll_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/sub_cat_live_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/sub_cat_grid_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:nestedScrollingEnabled="false" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rel_NoDataFound"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:layout_marginLeft="@dimen/_80sdp"
+                        android:layout_marginRight="@dimen/_80sdp">
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/no_product"
+                            android:id="@+id/img_no_Product"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_100sdp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txtview1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/img_no_Product"
+                            android:text="No items listed here yet, try"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtview1"
+                            android:layout_centerHorizontal="true"
+                            android:text="other category"
+                            />
+
+                    </RelativeLayout>
+                    <ProgressBar
+                        android:id="@+id/pb_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/txt_no_more_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text=" No more items available"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </com.app.admin.sellah.view.CustomViews.TouchDetectableScrollView>
+
+        </android.support.design.widget.CoordinatorLayout>
+        <!-- <com.app.admin.sellah.view.CustomViews.TouchDetectableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:card_view="http://schemas.android.com/tools"
+             android:id="@+id/scroll_root"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <LinearLayout
+                     android:id="@+id/li_view_container"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+
+                     <TextView
+                         android:id="@+id/txt_cat_name"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="left|center_vertical"
+                         android:layout_marginLeft="@dimen/_5sdp"
+                         android:layout_marginTop="@dimen/_5sdp"
+                         android:text="Category name"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="@dimen/_14sdp"
+                         android:visibility="gone" />
+                     &lt;!&ndash; <android.support.v7.widget.CardView
+                          android:id="@+id/cv_adds"
+                          android:layout_width="match_parent"
+                          android:layout_height="@dimen/_135sdp"
+                          android:layout_below="@id/relativeLayout"
+                          android:padding="@dimen/_10sdp"
+                          app:cardElevation="@dimen/_5sdp"
+                          app:cardUseCompatPadding="true"
+                          card_view:cardCornerRadius="15dp">&ndash;&gt;
+
+                     &lt;!&ndash; <RelativeLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+
+                          <android.support.v4.view.ViewPager
+                              android:id="@+id/viewPagerSubCat"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:background="@drawable/round_border" />
+
+                          <LinearLayout
+                              android:id="@+id/SliderDots"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_alignBottom="@+id/viewPagerSubCat"
+                              android:layout_marginBottom="@dimen/_10sdp"
+                              android:gravity="center_vertical|center_horizontal"
+                              android:orientation="horizontal" />
+
+                      </RelativeLayout>&ndash;&gt;
+                     <RelativeLayout
+                         android:id="@+id/rel_adds"
+                         android:layout_width="match_parent"
+                         android:layout_height="@dimen/_170sdp"
+                         android:padding="@dimen/_5sdp">
+
+                         <android.support.v4.view.ViewPager
+                             android:id="@+id/viewPagerSubCat"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentStart="true"
+                             android:layout_alignParentTop="true" />
+
+                         <LinearLayout
+                             android:id="@+id/SliderDots"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_alignBottom="@+id/viewPagerSubCat"
+                             android:layout_marginBottom="@dimen/_10sdp"
+                             android:gravity="center_vertical|center_horizontal"
+                             android:orientation="horizontal" />
+
+                     </RelativeLayout>
+                     &lt;!&ndash;</android.support.v7.widget.CardView>&ndash;&gt;
+                     <TextView
+                         android:id="@+id/text_live_video"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="left|center_vertical"
+                         android:layout_marginLeft="@dimen/_5sdp"
+                         android:layout_marginTop="@dimen/_10sdp"
+                         android:text="@string/currently_live"
+                         android:textColor="@color/colorBlack"
+                         android:textSize="@dimen/_14sdp" />
+
+                     <TextView
+                         android:id="@+id/text_no_live_video"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginBottom="@dimen/_3sdp"
+                         android:layout_marginLeft="@dimen/_15sdp"
+                         android:layout_marginTop="@dimen/_5sdp"
+                         android:text="Currently no live video available."
+                         android:visibility="gone" />
+
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:padding="@dimen/_5sdp">
+
+                         <android.support.v4.view.ViewPager
+                             android:id="@+id/vp_live"
+                             android:layout_width="match_parent"
+                             android:layout_height="@dimen/_190sdp"
+                             android:layout_alignParentLeft="true"
+                             android:layout_alignParentStart="true"
+                             android:layout_alignParentTop="true"
+                             android:visibility="visible" />
+
+                         <LinearLayout
+                             android:id="@+id/vp_live_dots"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_alignBottom="@+id/vp_live"
+                             android:layout_marginBottom="@dimen/_10sdp"
+                             android:gravity="center_vertical|center_horizontal"
+                             android:orientation="horizontal" />
+
+                     </RelativeLayout>
+                 </LinearLayout>
+
+                 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     xmlns:tools="http://schemas.android.com/tools"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="@dimen/_5sdp"
+                     app:cardBackgroundColor="@color/colorWhite"
+                     app:cardCornerRadius="@dimen/_2sdp"
+                     app:cardElevation="@dimen/_3sdp"
+                     app:cardUseCompatPadding="true">
+
+                     <android.support.v7.widget.RecyclerView
+                         android:id="@+id/rec_sub_cat"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content" />
+                 </android.support.v7.widget.CardView>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+                     <android.support.v7.widget.RecyclerView
+                         android:id="@+id/sub_cat_live_recycler"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="@dimen/_5sdp"
+                         android:visibility="gone" />
+                     <android.support.v7.widget.RecyclerView
+                         android:id="@+id/sub_cat_grid_recycler"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="@dimen/_10sdp"
+                         android:nestedScrollingEnabled="false" />
+
+                     <ProgressBar
+                         android:id="@+id/pb_home"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center" />
+
+                     <TextView
+                         android:id="@+id/txt_no_more_item"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_marginBottom="@dimen/_5sdp"
+                         android:layout_marginTop="@dimen/_4sdp"
+                         android:text=" No more items available"
+                         android:textSize="@dimen/_12sdp"
+                         android:visibility="gone" />
+                 </LinearLayout>
+
+             </LinearLayout>
+         </com.app.admin.sellah.view.CustomViews.TouchDetectableScrollView>-->
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

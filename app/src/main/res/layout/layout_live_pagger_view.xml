@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:background="@drawable/round_border"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/_2sdp"
+    app:cardElevation="@dimen/_2sdp">-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_grid_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_1sdp"
+    android:background="@drawable/round_border"
+    android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="@dimen/_6sdp"
+            android:elevation="@dimen/_3sdp"
+            android:id="@+id/cv_product_view"
+            app:cardPreventCornerOverlap="true"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Click">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/subcat_stream_img" />
+             <!--   <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/play_icon"
+                    android:id="@+id/videoview_categories_play" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text=" Live "
+                    android:padding="@dimen/_3sdp"
+                    android:textColor="#fff"
+                    android:background="@drawable/live_btn_bg"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/home_livetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="01:24"
+                    android:padding="@dimen/_3sdp"
+                    android:textColor="#fff"
+                    android:background="@drawable/live_btn_bg"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+<!--</android.support.v7.widget.CardView>-->
+    <!--
+    -->
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:id="@+id/Click">
+
+            <ImageView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:background="@drawable/subcat_stream_img"
+                android:id="@+id/videoview_categories" />
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/play_icon"
+                android:id="@+id/videoview_categories_play" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="01:24"
+                android:textSize="@dimen/_8sdp"
+                android:textColor="#fff"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>-->

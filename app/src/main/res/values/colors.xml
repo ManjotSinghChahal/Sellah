@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E35252</color>
+    <color name="colorGreen">#34b566</color>
+    <color name="colorRed">#E35252</color>
+    <color name="colorGrey">#9b9b9b</color>
+    <color name="light_grey">#c9c9c9</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">#E35252</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlackTrans">#96000000</color>
+    <color name="colorBlackTransLittle">#d9000000</color>
+    <color name="colorWhiteTrans">#00fffbfb</color>
+    <color name="colorTrans">#00000000</color>
+    <color name="colorPinkyWhite">#FBECEC</color>
+    <color name="colorLGrey">#FFE1DEDE</color>
+    <color name="colorVLGrey">#f5f5f5</color>
+    <color name="coloCreamyWhite">#FAFAFA</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDyellow">#EEC12D</color>
+    <color name="colorTest">#5c000000</color>
+    <color name="colorDarkGray">#1e2e3b</color>
+    <color name="colorFormBg">#1E2E3B</color>
+    <color name="colorFormHeaderBg">#e7dddc</color>
+    <color name="colorForgetEmailSuccess">#88b270</color>
+    <color name="colorEvenCardColor">#e9ecf3</color>
+    <color name="colorOddCardColor">#f8f4e8</color>
+
+    <array name="array_dot_active">
+        <item>@color/colorWhite</item>
+        <item>@color/colorWhite</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/colorWhite</item>
+        <item>@color/colorWhite</item>
+
+    </array>
+
+
+    <color name="light_gray">#F0F5F5</color>
+    <color name="translucent_white">#39ffffff</color>
+    <!--<color name="translucent_white">#adffffff</color>-->
+    <color name="dark_gray">#243037</color>
+
+    <color name="light_blue">#59AAFF</color>
+    <color name="blue">#2C7DE3</color>
+    <color name="dark_blue">#1C6AC9</color>
+</resources>

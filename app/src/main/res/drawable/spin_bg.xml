@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorWhite" />
+            <corners android:radius="35dp" />
+        </shape>
+    </item>
+    <item android:left="@dimen/_65sdp"
+        >
+        <bitmap
+            android:gravity="left|center_vertical"
+            android:src="@drawable/ic_spinner_drop_icon"
+            />
+    </item>
+    </layer-list>

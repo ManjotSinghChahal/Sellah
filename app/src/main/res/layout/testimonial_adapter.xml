@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:scaleType="centerCrop"
+      />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_toRightOf="@+id/profile_image"
+        tools:text=" @ Dave"
+        android:textColor="#49bcf1"
+        android:textSize="@dimen/_11sdp" />
+
+    <ImageView
+        android:id="@+id/online_mark"
+        android:layout_width="@dimen/_5sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_toRightOf="@+id/profile_name"
+        android:src="@drawable/ic_dot_grey" />
+
+    <TextView
+        android:id="@+id/posted_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/online_mark"
+        tools:text=" 7 mintues ago"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/_11sdp" />
+
+    <!--<ImageView
+        android:id="@+id/rate"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/posted_time"
+        android:src="@drawable/star_icon"/>-->
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_15sdp"
+        android:isIndicator="true"
+        android:rating="3.3"
+        android:layout_toRightOf="@id/posted_time"
+        android:theme="@style/RatingBar"
+        android:id="@+id/rtbProductRating"
+        style="?attr/ratingBarStyleSmall"/>
+    <TextView
+        android:id="@+id/comment_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rtbProductRating"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:minLines="3"
+        android:paddingLeft="@dimen/_3sdp"
+        android:gravity="center|left"
+        android:layout_toRightOf="@+id/profile_image"
+        tools:text="Here we have to write all the feedbacks of the products."
+        android:textSize="12dp" />
+
+</RelativeLayout>

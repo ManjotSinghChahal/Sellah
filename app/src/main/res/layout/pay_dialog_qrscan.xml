@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/round_border_testemonialheader"
+    android:padding="@dimen/_12sdp">
+
+    <RelativeLayout
+        android:elevation="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Sellah Wallet"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+        <ImageView
+            android:id="@+id/btn_cancel_qrscan"
+            android:tint="#c0c0c0"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="9dp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/cross_icon"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance"
+        android:textColor="#adadad"
+        android:textSize="@dimen/_12sdp" />
+
+    <LinearLayout
+        android:id="@+id/lin_balance_qrcsan"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_2sdp">
+
+        <TextView
+
+            android:id="@+id/edt_availBal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S$1000"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_4sdp"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            android:text="Your Offered price"
+            android:textColor="#adadad"
+            android:textSize="@dimen/_12sdp" />
+        <ImageView
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:id="@+id/qr_code_black"
+            android:background="@drawable/qr_code_black"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lin_offered_price"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray"
+        android:textColorHint="@color/colorBlack"
+        android:layout_marginRight="@dimen/_3sdp"
+        >
+
+        <EditText
+            android:id="@+id/edt_offered_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@null"
+            android:hint="S$"
+            android:inputType="number"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/_5sdp"
+            android:textColorHint="@color/colorGrey"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_pay_qrScan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/signIn"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/round_red_border_testimonial"
+            android:gravity="center"
+            android:text="Pay"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

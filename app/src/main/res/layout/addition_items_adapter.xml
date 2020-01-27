@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_135sdp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_3sdp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eceff1"
+        android:padding="@dimen/_3sdp">
+
+        <ImageView
+            android:id="@+id/additional_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_135sdp"
+            android:padding="@dimen/_3sdp"
+            android:scaleType="centerCrop"
+             />
+
+
+        <TextView
+            android:id="@+id/suggest_feature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:alpha="0.85"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/live_btn_bg"
+            android:padding="@dimen/_3sdp"
+            android:text="Featured"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10sdp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tb_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="Item name"
+        android:textColor="#000"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/tb_item_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_item_name"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="S$ 168"
+        android:textSize="@dimen/_12sdp" />
+</LinearLayout>

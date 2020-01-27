@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        >
+
+        <ImageView
+            android:id="@+id/f_image"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:src="@drawable/facebook_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/f_image"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="Facebook"
+            android:gravity="bottom"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:id="@+id/payment_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:text="Unlink"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorRed" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_3sdp">
+
+        <ImageView
+            android:id="@+id/twitter_img"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:src="@drawable/twiter_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/twitter_img"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="Twitter"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:text="Unlink"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorRed" />
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_3sdp">
+
+        <ImageView
+            android:id="@+id/insta_img"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:src="@drawable/instagram_icon" />
+
+        <TextView
+            android:id="@+id/insta_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/insta_img"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="Instagram"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorBlack" />
+
+        <TextView
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/edit_profile_red_background"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:text="Link"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorRed" />
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

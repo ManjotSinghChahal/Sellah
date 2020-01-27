@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_border_testemonialheader"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_weight="1.88"
+        android:src="@drawable/carlogo"
+        android:visibility="invisible" />-->
+
+
+    <RelativeLayout
+        android:background="@drawable/round_border_testemonialheader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:elevation="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:text="Coming Soon!"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_chat_order_cancel"
+            android:tint="#c0c0c0"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="9dp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/cross_icon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_3sdp"
+        android:id="@+id/rl_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <ImageView
+          android:layout_width="@dimen/_100sdp"
+          android:layout_marginTop="@dimen/_10sdp"
+          android:layout_height="@dimen/_100sdp"
+          android:layout_centerHorizontal="true"
+          android:src="@drawable/selllivevideo_icon"
+          android:id="@+id/imv"
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:text="Live Video feature will be made available soon!\n Stay Tuned!"
+            android:textSize="@dimen/_10sdp" />
+    </RelativeLayout>
+
+
+
+
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:id="@+id/exitedtbtn"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/round_red_border_testimonial"
+        android:gravity="center"
+        android:text="I'm Excited!"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="bold" />
+
+
+
+</LinearLayout>

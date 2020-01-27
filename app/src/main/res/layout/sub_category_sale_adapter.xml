@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:id="@+id/rl_subcat_root"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/text_tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For Sale"
+                android:padding="@dimen/_8sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorBlack" />
+            <View
+                android:id="@+id/view_selected"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:background="@color/colorRed"/>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="@dimen/_120sdp"-->
+    <!--android:layout_height="@dimen/_30sdp"-->
+    <!--android:layout_margin="@dimen/_10sdp"-->
+    <!--android:background="@color/colorRed">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/text_tag2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:text="004-201"-->
+    <!--android:textColor="@color/colorWhite" />-->
+    <!--<ImageView-->
+    <!--android:layout_width="@dimen/_20sdp"-->
+    <!--android:layout_height="@dimen/_20sdp"-->
+    <!--android:padding="@dimen/_5sdp"-->
+    <!--android:src="@drawable/add_product_white_cross"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"/>-->
+
+    <!--</RelativeLayout>-->
+</LinearLayout>

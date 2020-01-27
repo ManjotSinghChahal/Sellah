@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/li_bottom_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_3sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_menu"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_chevron_left_black" />
+        </RelativeLayout>
+
+        <!--   <RelativeLayout
+               android:id="@+id/relative_back"
+               android:layout_width="@dimen/_40sdp"
+               android:layout_height="@dimen/_40sdp"
+               android:gravity="center"
+               android:visibility="gone">
+
+               <ImageView
+                   android:id="@+id/img_back"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="@dimen/_10sdp"
+                   android:src="@drawable/back_arrow" />
+           </RelativeLayout>-->
+
+<!--
+
+        <RelativeLayout
+            android:id="@+id/rl_filter"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/filter"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/filter_icon2" />
+        </RelativeLayout>
+-->
+
+
+        <TextView
+            android:id="@+id/title_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Add card details"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/ll_nodata"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/selladdnew_product" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oops, you haven't added a card yet"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <Button
+                android:id="@+id/addcard_beforenotdata"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:text="Add a Card"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/red_border_solid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/cardpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/card_buttons_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_Addcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signIn"
+            android:layout_weight="1"
+
+            android:background="@drawable/live_product_detail_red_background"
+            android:gravity="center"
+            android:text="Add a new Card"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_14sdp" />
+
+        <Button
+            android:layout_marginTop="@dimen/_7sdp"
+            android:id="@+id/selectcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signIn"
+            android:layout_weight="1"
+
+            android:background="@drawable/red_border_solid"
+            android:gravity="center"
+            android:text="Select this Card"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

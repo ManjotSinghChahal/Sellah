@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:innerRadius="0dp"
+android:shape="ring"
+android:thicknessRatio="2"
+android:useLevel="false" >
+<solid android:color="@color/appBackground" />
+
+</shape>-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval" >
+
+            <solid
+                android:color="@color/colorRed" />
+
+            <size
+                android:height="@dimen/_100sdp"
+                android:width="@dimen/_100sdp" />
+        </shape>
+    </item>
+
+    <!--<item
+        android:drawable="@drawable/ic_chevron_right_black_24dp"
+       >
+        <shape android:shape="ring" >
+            <size
+                android:height="50dp"
+                android:width="50dp" />
+        </shape>
+    </item>-->
+</layer-list>

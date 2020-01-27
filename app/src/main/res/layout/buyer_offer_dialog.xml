@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/round_border_testemonialheader"
+    android:padding="@dimen/_12sdp">
+
+    <RelativeLayout
+        android:elevation="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Make an Offer"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+        <ImageView
+            android:id="@+id/btn_cancel"
+            android:tint="#c0c0c0"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="9dp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/cross_icon"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/_10sdp"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/dialog_content_makeOffer"
+            android:textColor="#adadad"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/txt_original_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="00"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. of stock available"
+            android:textColor="#adadad"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/txt_total_stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="131"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your offered price"
+        android:textColor="#adadad"
+        android:textSize="@dimen/_12sdp" />
+
+    <com.app.admin.sellah.view.CustomViews.NoChangingBackgroundTextInputLayout
+        android:id="@+id/il_add_price"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+
+        app:hintEnabled="false">
+
+        <EditText
+            android:background="@drawable/live_product_detail_grey_background"
+            android:id="@+id/edt_add_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="S$"
+            android:paddingLeft="@dimen/_3sdp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColorHint="@color/colorLGrey"
+            android:textSize="@dimen/_12sdp" />
+    </com.app.admin.sellah.view.CustomViews.NoChangingBackgroundTextInputLayout>
+
+    <TextView
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:padding="@dimen/_3sdp"
+        android:text="Quantity"
+        android:textColor="#adadad"
+        android:textSize="@dimen/_12sdp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stock_spinner">
+
+    </Spinner>
+
+    <com.app.admin.sellah.view.CustomViews.NoChangingBackgroundTextInputLayout
+        android:id="@+id/il_add_quantity"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:visibility="gone"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/edt_add_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/live_product_detail_grey_background"
+            android:hint="i.e. 1"
+            android:visibility="gone"
+            android:inputType="number"
+            android:singleLine="true"
+            android:text="1"
+            android:paddingLeft="@dimen/_3sdp"
+            android:textColorHint="@color/colorLGrey"
+            android:textSize="@dimen/_12sdp" />
+
+
+
+    </com.app.admin.sellah.view.CustomViews.NoChangingBackgroundTextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_makeOffer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/signIn"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/round_red_border_testimonial"
+            android:gravity="center"
+            android:text="Make Offer"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

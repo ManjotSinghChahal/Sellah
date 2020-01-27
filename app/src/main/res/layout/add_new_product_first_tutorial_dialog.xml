@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43000000"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/txt_add_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="Add photos"
+            android:textSize="@dimen/_13sdp" />
+
+
+        <RelativeLayout
+            android:layout_below="@+id/txt_add_photos"
+            android:id="@+id/rl_addnewvideo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/live_product_detail_dash_background"
+            >
+
+
+
+
+
+            <TextView
+                android:id="@+id/dummylive1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:layout_toLeftOf="@+id/dummylive2_text"
+                android:gravity="center_vertical"
+                android:textColor="#9e9e9e"
+                android:textSize="@dimen/_35sdp"
+                />
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/dummylive2_text"
+                android:paddingTop="@dimen/_3sdp"
+                android:gravity="center_vertical"
+                android:textColor="#9e9e9e"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/_5sdp"
+                android:text="Capture video cover image"
+                android:textSize="@dimen/_12sdp"
+                />
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_below="@id/rel"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/tilt_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Add Nice Product Image "
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            android:layout_gravity="center"
+            android:text="Good Lighting  and clear white \n backgrounds will make a big \n difference!"
+            android:textColor="@color/colorWhite" />
+
+
+        <Button
+            android:id="@+id/gotit_btn"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/i"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/round_red_border_testimonial"
+            android:text="Got it!"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

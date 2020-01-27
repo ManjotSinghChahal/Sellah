@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.admin.sellah">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!--<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!--<uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />-->
+    <application
+        android:name=".controller.utils.Global"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:resizeableActivity="false"
+        android:roundIcon="@drawable/app_new_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute"
+        tools:replace="allowBackup,supportsRtl">
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+
+        <!--<receiver android:name=".controller.utils.SMSListener">
+             <intent-filter>
+                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+             </intent-filter>
+         </receiver>-->
+        <!--<receiver android:name=".controller.utils.MySMSBroadcastReceiver" android:exported="true">
+             <intent-filter>
+                 <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+             </intent-filter>
+         </receiver>-->
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/app_dummy_logo" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorRed" />
+
+        <provider
+            android:name=".model.extra.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".view.activities.StreamedVideoDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+        <activity
+            android:name=".view.activities.QrCodeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+        <activity
+            android:name=".view.activities.MainActivityLiveStream"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+        <activity
+            android:name="com.cooltechworks.creditcarddesign.CardEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.stripe.StripeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activities.VideoPlayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".view.activities.ImageViewerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".view.activities.ImageSlideShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".view.activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".view.activities.Video_capture_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".view.activities.Previewvideo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name=".view.activities.SplashScreen"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <!-- Sets the intent action to view the activity -->
+                <action android:name="android.intent.action.VIEW" />
+                <!-- Allows the link to be opened from a web browser -->
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--Allows the deep link to be used without specifying the app name-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!--URI http://www.sellahapp.com-->
+                <data android:scheme="https" />
+                <data android:host="sellah.market" />
+                <!--<data android:scheme="https"/>
+                 <data android:host="sellah.dev"/>-->
+                <!--<data android:host="www.sellahapp.com"/>-->
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".view.activities.WelcomeActivity"></activity>
+        <activity android:name=".view.activities.VideoWelcomeActivity"></activity>
+
+        <activity
+            android:name=".view.activities.SignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".view.activities.FilterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".view.activities.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.fragments.AddCreditCardDetailFragment"
+            android:screenOrientation="portrait" />
+
+        <!--<meta-data
+              android:name="io.fabric.ApiKey"
+              android:value="170b5ed156a65e1d08fb3f5087777fe2e5b02aa4" />-->
+
+        <!--<meta-data
+                    android:name="io.fabric.ApiKey"
+                    android:value="f4aa916262e6c2337b2f37d6c5574b470b996770"/>-->
+
+        <!--M.geniusaappdeveloper, Receives all in dovoan admin@gmail app-->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cb41280130e5f94fe0a71fd49ecd4dea6edeae6f" />
+
+        <service android:name=".controller.utils.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".controller.utils.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".view.activities.ViewPinedMessage" />
+        <activity
+            android:name=".view.activities.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.CustomDialogs.OTPVerificationDialog" />
+        <activity
+            android:name=".view.activities.AddNewVideos"
+            android:label="@string/title_activity_add_new_videos"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name=".view.activities.AddNewInfo"
+            android:label="@string/title_activity_add_new_videos"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name=".view.activities.AddNewTransaction"
+            android:label="@string/title_activity_add_new_videos"
+            android:theme="@style/AppTheme"></activity>
+
+        <activity
+            android:name=".view.fragments.ShowCreditCardDetailFragment"
+            android:label="@string/title_activity_add_new_videos"
+            android:theme="@style/AppTheme"></activity>
+
+    </application>
+
+</manifest>

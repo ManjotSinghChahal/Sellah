@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_3sdp"
+    android:weightSum="1">
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_weight="1.88"
+        android:src="@drawable/carlogo"
+        android:visibility="invisible" />-->
+
+    <RelativeLayout
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+
+        >
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_23sdp"
+            android:id="@+id/afteracpt_offerlayout"
+            android:background="@drawable/sendchat2"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:id="@+id/aftertxt_item_sender_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="you accepted iphone store's "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="2.5"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:gravity="right"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/aftertxt_item_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:gravity="center"
+                                android:text="Red Dress "
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="S$ "
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/aftertxt_item_cost"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="12"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Qty: "
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_12sdp" />
+                            <TextView
+                                android:id="@+id/aftertxt_item_quantity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_12sdp"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:background="@drawable/chat_img_background"
+
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_width="match_parent"
+                        android:padding="4dp"
+                        android:layout_height="@dimen/_60sdp">
+
+
+                        <ImageView
+                            android:id="@+id/img_product_image1"
+                            android:src="@drawable/image"
+                            android:scaleType="fitCenter"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_23sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:id="@+id/beforeacpt__offer__layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/uppperchatlayout"
+                android:background="@drawable/chat_upper_layout"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:singleLine="true"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:id="@+id/txt_item_sender_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Red Dress "
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="2.5"
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+
+                        <RelativeLayout
+                            android:background="@drawable/chat_img_background"
+
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_width="match_parent"
+                            android:padding="4dp"
+                            android:layout_height="@dimen/_60sdp">
+
+
+                            <ImageView
+                                android:id="@+id/img_product_image"
+                                android:scaleType="fitCenter"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/txt_item_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:text="Red Dress "
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                     android:id="@+id/dollar_sign"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="S$ "
+                                    android:textColor="@color/colorRed"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/txt_item_cost"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="12"
+                                    android:textColor="@color/colorRed"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Qty: "
+                                    android:textColor="@color/light_grey"
+                                    android:textSize="@dimen/_12sdp" />
+                                <TextView
+                                    android:id="@+id/txt_item_quantity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/light_grey"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:id="@+id/li_offer_status"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:visibility="gone"
+                    android:background="@drawable/chat_pay_round"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold|italic"
+                    android:text="Cancelled"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/txt_offer_status"
+
+                    />
+
+                <LinearLayout
+
+                    android:id="@+id/li_confirm_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_item_accept"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_red_border"
+                        android:text="Accept"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <Button
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:id="@+id/btn_item_cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/round_red_chat_stroke"
+                        android:text="Decline"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/_12sdp" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/li_pay_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/chat_pay_round"
+                        android:text="Pay"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp" />
+<!--
+                    <View
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorLGrey" />
+
+                    <Button
+                        android:id="@+id/btn_cancel_pay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@color/colorTrans"
+                        android:text="Cancel"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/_12sdp" />-->
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- <TextView
+         android:id="@+id/txt_time"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+         android:layout_weight="1.3"
+         android:gravity="center"
+         android:paddingBottom="@dimen/_8sdp"
+         android:text="20:40"
+         android:textSize="@dimen/_10sdp"
+         android:visibility="invisible" />-->
+</LinearLayout>

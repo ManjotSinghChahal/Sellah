@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item
+        android:id="@+id/menu_Report_user"
+        android:title="Report this user"/>
+    <item
+        android:id="@+id/menu_block"
+        android:title="Block this user"/>-->
+
+    <item
+        android:id="@+id/menu_Report_user"
+        android:title="Report this user"/>
+    <item
+        android:id="@+id/menu_view_pined"
+        android:title="View bookmarked message"/>
+    <item
+        android:id="@+id/menu_cancel_comment"
+        android:title="Cancel"/>
+</menu>

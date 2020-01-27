@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:background="@color/colorRed">
+
+        <TextView
+            android:id="@+id/tag_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="For Sale"
+            android:padding="@dimen/_4sdp"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/textview_back"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginLeft="@dimen/_5sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/tag_text"
+            android:gravity="center"
+            tools:text=" Sedan "
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp" />
+    </android.support.constraint.ConstraintLayout>-->

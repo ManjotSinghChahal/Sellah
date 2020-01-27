@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/coloCreamyWhite"
+    android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/txt_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify your mobile with OTP"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/_17sdp"
+        />
+    <!--<Vew-->
+
+    <RelativeLayout
+        android:id="@+id/rel_sending_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_dialog_title"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txt_lbl_otp_sending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sending OTP to mobile number"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/txt_mobile_before"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_lbl_otp_sending"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_16sdp"
+            tools:text="+91 9730333946"/>
+
+        <ProgressBar
+            android:id="@+id/pb_otp"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/txt_mobile_before"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_veryfing_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_dialog_title"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/txt_lbl_otp_verifing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Verifying OTP ...."
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/txt_mobile_before_v"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_lbl_otp_verifing"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_16sdp"
+            tools:text="+91 9730333946"/>
+
+        <ProgressBar
+            android:id="@+id/pb_v_otp"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_below="@+id/txt_mobile_before_v"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_otp_sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_dialog_title"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/txt_lbl_otp_sent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="We have sent an OTP on your number"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_15sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_lbl_otp_sent"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:id="@+id/li_mobile">
+            <TextView
+                android:id="@+id/txt_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_lbl_otp_sent"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16sdp"
+
+                tools:text="+91 9730333946"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@color/colorGrey"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:text="Edit"
+                android:textSize="@dimen/_16sdp"
+
+                android:textColor="@color/colorBlack"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/pb_time"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/li_mobile"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toLeftOf="@+id/txt_time_remaining"
+            app:mpb_progressStyle="horizontal"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_time_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/li_mobile"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textColor="@color/colorGrey"
+            tools:text="0m 00s"
+            android:textSize="@dimen/_12sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/li_mobile"
+            android:id="@+id/li_resend"
+            android:gravity="left|center"
+            android:clickable="false"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="invisible"
+            >
+            <ImageView
+                android:id="@+id/img_resend"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_below="@+id/txt_time_remaining"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/resen_sms_icon"
+                />
+            <TextView
+                android:layout_toRightOf="@+id/img_resend"
+                android:id="@+id/txt_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_time_remaining"
+                android:textColor="@color/colorBlack"
+                android:text="Resend SMS"
+                android:textSize="@dimen/_12sdp"/>
+        </LinearLayout>
+
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/otp_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/li_resend"
+            android:layout_centerHorizontal="true"
+            app:cursorVisible="true"
+            app:inputType="number"
+            app:password="false"
+            app:pinBackground="@drawable/drawable_pin_view"
+            app:pinHeight="@dimen/_35sdp"
+            app:pinLength="4"
+            android:layout_marginBottom="@dimen/_15sdp"
+            app:pinWidth="@dimen/_28sdp"/>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_below="@+id/rel_otp_sent"
+        android:background="@android:color/transparent"
+        android:text="CANCEL"
+        android:textColor="@color/colorRed"/>
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_below="@+id/rel_otp_sent"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:text="VERIFY"
+        android:textColor="@color/colorGreen"/>
+
+
+</RelativeLayout>

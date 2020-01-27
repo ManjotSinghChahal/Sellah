@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/_3sdp"
+    android:paddingLeft="@dimen/_3sdp"
+    android:paddingRight="@dimen/_3sdp"
+    android:weightSum="1">
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_weight="1.88"
+        android:src="@drawable/carlogo"
+        android:visibility="invisible" />-->
+
+    <RelativeLayout
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+
+
+            android:id="@+id/beforeacpt__offer__layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/uppperchatlayout"
+                android:background="@drawable/chat_upper_layout"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:singleLine="true"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingLeft="@dimen/_15sdp"
+                        android:id="@+id/txt_item_sender_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:id="@+id/cancel_offer"
+                        android:tint="#a8a7a6"
+                        android:padding="@dimen/_1sdp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/cross_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_weight="2.5"
+                    android:weightSum="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+
+                        <RelativeLayout
+                            android:background="@drawable/chat_img_background"
+
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_width="match_parent"
+                            android:padding="4dp"
+                            android:layout_height="@dimen/_60sdp">
+
+
+                            <ImageView
+                                android:id="@+id/pay_offer_image"
+                                android:scaleType="fitCenter"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_48sdp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:id="@+id/pay_txt_item_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_8sdp"
+                                    android:gravity="center"
+                                    android:text="Red Dress "
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                     android:id="@+id/dollar_sign"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="S$ "
+                                    android:textColor="@color/colorRed"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_toRightOf="@+id/dollar_sign"
+                                    android:id="@+id/pay_txt_item_cost"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="12"
+                                    android:textColor="@color/colorRed"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+
+
+
+
+
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Qty: "
+                                    android:textColor="@color/light_grey"
+                                    android:textSize="@dimen/_12sdp" />
+                                <TextView
+                                    android:id="@+id/pay_txt_item_quantity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/light_grey"
+                                    android:textSize="@dimen/_12sdp" />
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_alignParentRight="true">
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true">
+
+                                <ImageButton
+                                    android:id="@+id/btn_menu_pay"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:background="@drawable/option_icon"
+                                    android:textColor="@color/colorBlack"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:layout_below="@+id/paid_or_not"
+                                    android:textSize="@dimen/_16sdp" />
+
+
+                                <TextView
+                                    android:id="@+id/paid_or_not"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="PAID"
+                                    android:textColor="@color/colorRed"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:id="@+id/li_offer_status"
+                android:layout_marginTop="2dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:visibility="gone"
+                    android:background="@drawable/chat_pay_round"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold|italic"
+                    android:text="Cancelled"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/txt_offer_status"
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
